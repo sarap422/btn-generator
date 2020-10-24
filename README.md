@@ -1,0 +1,2 @@
+# btn-generator
+CSSかんたんボタンジェネレーターは、シンプルなアイコン付きのボタンを生成するGUIツールです。アイコンはFontAwesome・IcoMoonに対応、上下左右に設置出来ます。
