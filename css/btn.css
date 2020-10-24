@@ -1,0 +1,1791 @@
+@charset "UTF-8";
+
+/* ▽ここからアイコンSAMPLE（新しいのを上にする）*/
+
+
+/*-------- btn_root_snowdrop_0C--------*/
+:root {
+  --btn_snowdrop_0C_width: 18rem;
+  --btn_snowdrop_0C_height: 5em;
+  --btn_snowdrop_0C_padding: 0em; /*余白*/
+  --btn_snowdrop_0C_bgcolor: none; /*影色にも使用＆IE対策*/
+  --btn_snowdrop_0C_bground: none; /*グラデーション対応*/
+  --btn_snowdrop_0C_radius: 0rem; /*角丸み*/
+  --btn_snowdrop_0C_spancolor: #222;
+  --btn_snowdrop_0C_emcolor: #222; 
+  --btn_snowdrop_0C_bcolor: #222;
+  --btn_snowdrop_0C_iunicode: "\eaec"; /*FontAwesome5 or IcoMoon*/
+  --btn_snowdrop_0C_isize: 3rem; /*アイコンサイズ*/
+  --btn_snowdrop_0C_icolor: #222; /*アイコン色*/
+  --btn_snowdrop_0C_iflex: row; /*アイコン位置*/
+}
+/*---- button_snowdrop_0C -------- */
+/*---- parent / child ----*/
+a.pbtn_snowdrop_0C {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_snowdrop_0C_width); /*横幅*/
+  height: var(--btn_snowdrop_0C_height); /*縦幅*/
+  margin: calc(var(--btn_snowdrop_0C_padding) *1.0); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_snowdrop_0C_bgcolor);
+  background: var(--btn_snowdrop_0C_bground);  
+  border-radius: var(--btn_snowdrop_0C_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  transition: 0.6s;
+}
+a.pbtn_snowdrop_0C:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_snowdrop_0C_height) rgba(0,206,209,0.1) inset, 
+  0px 3px 2px rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+}
+a.pbtn_snowdrop_0C:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_snowdrop_0C .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_snowdrop_0C_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_snowdrop_0C_padding));
+  display: flex;
+  color: var(--btn_snowdrop_0C_spancolor);
+}
+a.pbtn_snowdrop_0C .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_snowdrop_0C_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_snowdrop_0C_emcolor);
+}
+a.pbtn_snowdrop_0C .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_snowdrop_0C_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_snowdrop_0C_bcolor);
+}
+a.pbtn_snowdrop_0C .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_snowdrop_0C_isize); /*アイコンサイズ*/
+  color: var(--btn_snowdrop_0C_icolor);
+}
+a.pbtn_snowdrop_0C .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_snowdrop_0C_iunicode);
+  font-weight: 900;
+}
+a.pbtn_snowdrop_0C .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_snowdrop_0C_iunicode);
+  font-weight: normal;
+}
+
+
+/*-------- btn_root_PixelLab_0A--------*/
+:root {
+  --btn_PixelLab_0A_width: 16em;
+  --btn_PixelLab_0A_height: 4em;
+  --btn_PixelLab_0A_padding: 0.618em; /*余白*/
+  --btn_PixelLab_0A_bgcolor: #006276; /*影色にも使用＆IE対策*/
+  --btn_PixelLab_0A_bground: linear-gradient(0deg, rgba(0,98,118,1) 0%, rgba(2,29,35,1) 100%); /*グラデーション対応*/
+  --btn_PixelLab_0A_radius: 100vh; /*角丸み*/
+  --btn_PixelLab_0A_spancolor: #FFF;
+  --btn_PixelLab_0A_emcolor: #FFF; 
+  --btn_PixelLab_0A_bcolor: #FFF;
+}
+/*---- button_PixelLab_0A -------- */
+/*---- parent / child ----*/
+a.pbtn_PixelLab_0A {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_PixelLab_0A_width); /*横幅*/
+  height: var(--btn_PixelLab_0A_height); /*縦幅*/
+  margin: calc(var(--btn_PixelLab_0A_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_PixelLab_0A_bgcolor);
+  background: var(--btn_PixelLab_0A_bground);  
+  border-radius: var(--btn_PixelLab_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_PixelLab_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_PixelLab_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_PixelLab_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_PixelLab_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_PixelLab_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_PixelLab_0A_padding));
+  display: flex;
+  color: var(--btn_PixelLab_0A_spancolor);
+}
+a.pbtn_PixelLab_0A .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_PixelLab_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_PixelLab_0A_emcolor);
+}
+a.pbtn_PixelLab_0A .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_PixelLab_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_PixelLab_0A_bcolor);
+}
+
+
+
+/*-------- btn_root_CSSGradient_0A--------*/
+:root {
+
+  --btn_CSSGradient_0A_width: 14em;
+  --btn_CSSGradient_0A_height: 3em;
+  --btn_CSSGradient_0A_padding: 1.618em; /*余白*/
+  --btn_CSSGradient_0A_bgcolor: rgb(34,193,195); /*影色にも使用＆IE対策*/
+  --btn_CSSGradient_0A_bground: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); /*グラデーション対応*/
+  --btn_CSSGradient_0A_radius: 8px; /*角丸み*/
+  --btn_CSSGradient_0A_spancolor: midnightblue;
+  --btn_CSSGradient_0A_emcolor: midnightblue; 
+  --btn_CSSGradient_0A_bcolor: midnightblue;
+  --btn_CSSGradient_0A_iunicode: "\f105"; /*FontAwesome5 or IcoMoon*/
+  --btn_CSSGradient_0A_isize: 2em; /*アイコンサイズ*/
+  --btn_CSSGradient_0A_icolor: white; /*アイコン色*/
+  --btn_CSSGradient_0A_iflex: row-reverse; /*アイコン位置*/
+}
+/*---- button_CSSGradient_0A -------- */
+/*---- parent / child ----*/
+a.pbtn_CSSGradient_0A {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_CSSGradient_0A_width); /*横幅*/
+  height: var(--btn_CSSGradient_0A_height); /*縦幅*/
+  margin: calc(var(--btn_CSSGradient_0A_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_CSSGradient_0A_bgcolor);
+  background: var(--btn_CSSGradient_0A_bground);  
+  border-radius: var(--btn_CSSGradient_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_CSSGradient_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_CSSGradient_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_CSSGradient_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_CSSGradient_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_CSSGradient_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_CSSGradient_0A_padding));
+  display: flex;
+  color: var(--btn_CSSGradient_0A_spancolor);
+}
+a.pbtn_CSSGradient_0A .cbtn em {
+  font-size: 100%;
+  font-style: normal;
+  padding: calc(var(--btn_CSSGradient_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_CSSGradient_0A_emcolor);
+}
+a.pbtn_CSSGradient_0A .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_CSSGradient_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_CSSGradient_0A_bcolor);
+}
+a.pbtn_CSSGradient_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_CSSGradient_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_CSSGradient_0A_icolor);
+}
+a.pbtn_CSSGradient_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_CSSGradient_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_CSSGradient_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_CSSGradient_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_CSSGradient_0A --------*/
+/*---- parent / child ----*/
+a.pbtnI_CSSGradient_0A {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_CSSGradient_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_CSSGradient_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_CSSGradient_0A_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_CSSGradient_0A_bgcolor);
+  background: var(--btn_CSSGradient_0A_bground);
+  border-radius: var(--btn_CSSGradient_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_CSSGradient_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_CSSGradient_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_CSSGradient_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_CSSGradient_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_CSSGradient_0A .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_CSSGradient_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_CSSGradient_0A_icolor);
+}
+a.pbtnI_CSSGradient_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_CSSGradient_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_CSSGradient_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_CSSGradient_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_CSSGradient_0A --------*/
+a.fa_CSSGradient_0A {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_CSSGradient_0A_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_CSSGradient_0A .fa-stack-2x {
+  color: var(--btn_CSSGradient_0A_bgcolor);
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.fa_CSSGradient_0A .fa-stack-1x {
+  color: var(--btn_CSSGradient_0A_icolor);
+}
+a.fa_CSSGradient_0A :hover {
+  text-shadow: 0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_CSSGradient_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_CSSGradient_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+
+
+
+/*-------- btn_root_Eggradients_0A--------*/
+:root {
+  --btn_Eggradients_0A_width: 14em;
+  --btn_Eggradients_0A_height: 4em;
+  --btn_Eggradients_0A_padding: 1em; /*余白*/
+  --btn_Eggradients_0A_bgcolor: #861657; /*影色にも使用＆IE対策*/
+  --btn_Eggradients_0A_bground: linear-gradient(326deg, #861657 0%, #ffa69e 74%); /*グラデーション対応*/
+  --btn_Eggradients_0A_radius: 100vh; /*角丸み*/
+  --btn_Eggradients_0A_spancolor: white;
+  --btn_Eggradients_0A_emcolor: white; 
+  --btn_Eggradients_0A_bcolor: gold;
+  --btn_Eggradients_0A_iunicode: "\f7fb"; /*FontAwesome5 or IcoMoon*/
+  --btn_Eggradients_0A_isize: 2em; /*アイコンサイズ*/
+  --btn_Eggradients_0A_icolor: white; /*アイコン色*/
+  --btn_Eggradients_0A_iflex: row; /*アイコン位置*/
+}
+/*---- button_Eggradients_0A -------- */
+/*---- parent / child ----*/
+a.pbtn_Eggradients_0A {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_Eggradients_0A_width); /*横幅*/
+  height: var(--btn_Eggradients_0A_height); /*縦幅*/
+  margin: calc(var(--btn_Eggradients_0A_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_Eggradients_0A_bgcolor);
+  background: var(--btn_Eggradients_0A_bground);  
+  border-radius: var(--btn_Eggradients_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_Eggradients_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_Eggradients_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_Eggradients_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_Eggradients_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_Eggradients_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_Eggradients_0A_padding));
+  display: flex;
+  color: var(--btn_Eggradients_0A_spancolor);
+}
+a.pbtn_Eggradients_0A .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_Eggradients_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_Eggradients_0A_emcolor);
+}
+a.pbtn_Eggradients_0A .cbtn b {
+  font-size: 120%;
+  padding: calc(var(--btn_Eggradients_0A_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_Eggradients_0A_bcolor);
+}
+a.pbtn_Eggradients_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_Eggradients_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_Eggradients_0A_icolor);
+}
+a.pbtn_Eggradients_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_Eggradients_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_Eggradients_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_Eggradients_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_Eggradients_0A --------*/
+/*---- parent / child ----*/
+a.pbtnI_Eggradients_0A {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_Eggradients_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_Eggradients_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_Eggradients_0A_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_Eggradients_0A_bgcolor);
+  background: var(--btn_Eggradients_0A_bground);
+  border-radius: var(--btn_Eggradients_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_Eggradients_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_Eggradients_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_Eggradients_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_Eggradients_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_Eggradients_0A .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_Eggradients_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_Eggradients_0A_icolor);
+}
+a.pbtnI_Eggradients_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_Eggradients_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_Eggradients_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_Eggradients_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_Eggradients_0A --------*/
+a.fa_Eggradients_0A {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_Eggradients_0A_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_Eggradients_0A .fa-stack-2x {
+  color: var(--btn_Eggradients_0A_bgcolor);
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.fa_Eggradients_0A .fa-stack-1x {
+  color: var(--btn_Eggradients_0A_icolor);
+}
+a.fa_Eggradients_0A :hover {
+  text-shadow: 0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_Eggradients_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_Eggradients_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+
+/*-------- btn_root_fanbox_0B--------*/
+:root {
+
+  --btn_fanbox_0B_width: 14em;
+  --btn_fanbox_0B_height: 3.326em;
+  --btn_fanbox_0B_padding: 0; /*余白*/
+  --btn_fanbox_0B_bgcolor: #333333; /*影色にも使用＆IE対策*/
+  --btn_fanbox_0B_bground: #333333; /*グラデーション対応*/
+  --btn_fanbox_0B_radius: 0; /*角丸み*/
+
+  --btn_fanbox_0B_spancolor: #FFF;
+  --btn_fanbox_0B_emcolor: #FFF; 
+  --btn_fanbox_0B_bcolor: #FFF;
+  --btn_fanbox_0B_iunicode: "\eaf2"; /*FontAwesome5 or IcoMoon*/
+  --btn_fanbox_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_fanbox_0B_icolor: #FFF; /*アイコン色*/
+  --btn_fanbox_0B_iflex: row; /*アイコン位置*/
+}
+/*---- button_fanbox_0B -------- */
+/*---- parent / child ----*/
+a.pbtn_fanbox_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_fanbox_0B_width); /*横幅*/
+  height: var(--btn_fanbox_0B_height); /*縦幅*/
+  margin: calc(var(--btn_fanbox_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_fanbox_0B_bgcolor);
+  background: var(--btn_fanbox_0B_bground);  
+  border-radius: var(--btn_fanbox_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtn_fanbox_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtn_fanbox_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtn_fanbox_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_fanbox_0B_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_fanbox_0B_padding));
+  display: flex;
+  color: var(--btn_fanbox_0B_spancolor);
+}
+a.pbtn_fanbox_0B .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_fanbox_0B_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_fanbox_0B_emcolor);
+}
+a.pbtn_fanbox_0B .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_fanbox_0B_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_fanbox_0B_bcolor);
+}
+a.pbtn_fanbox_0B .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_fanbox_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_fanbox_0B_icolor);
+}
+a.pbtn_fanbox_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_fanbox_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtn_fanbox_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_fanbox_0B_iunicode);
+  font-weight: normal;
+}
+
+/*-------- btn_root_pixiv_0B--------*/
+:root {
+
+  --btn_pixiv_0B_width: 14em;
+  --btn_pixiv_0B_height: 3.326em;
+  --btn_pixiv_0B_padding: 0; /*余白*/
+  --btn_pixiv_0B_bgcolor: #333333; /*影色にも使用＆IE対策*/
+  --btn_pixiv_0B_bground: #333333; /*グラデーション対応*/
+  --btn_pixiv_0B_radius: 0; /*角丸み*/
+
+  --btn_pixiv_0B_spancolor: #FFF;
+  --btn_pixiv_0B_emcolor: #FFF; 
+  --btn_pixiv_0B_bcolor: #FFF;
+  --btn_pixiv_0B_iunicode: "\eaf2"; /*FontAwesome5 or IcoMoon*/
+  --btn_pixiv_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_pixiv_0B_icolor: #FFF; /*アイコン色*/
+  --btn_pixiv_0B_iflex: row; /*アイコン位置*/
+}
+/*---- button_pixiv_0B -------- */
+/*---- parent / child ----*/
+a.pbtn_pixiv_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: var(--btn_pixiv_0B_width); /*横幅*/
+  height: var(--btn_pixiv_0B_height); /*縦幅*/
+  margin: calc(var(--btn_pixiv_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_pixiv_0B_bgcolor);
+  background: var(--btn_pixiv_0B_bground);  
+  border-radius: var(--btn_pixiv_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtn_pixiv_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtn_pixiv_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtn_pixiv_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: var(--btn_pixiv_0B_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_pixiv_0B_padding));
+  display: flex;
+  color: var(--btn_pixiv_0B_spancolor);
+}
+a.pbtn_pixiv_0B .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_pixiv_0B_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_pixiv_0B_emcolor);
+}
+a.pbtn_pixiv_0B .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_pixiv_0B_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_pixiv_0B_bcolor);
+}
+a.pbtn_pixiv_0B .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_pixiv_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_pixiv_0B_icolor);
+}
+a.pbtn_pixiv_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_pixiv_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtn_pixiv_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_pixiv_0B_iunicode);
+  font-weight: normal;
+}
+
+
+/*-------- btn_root_pixiv_0B--------*/
+:root {
+
+  --btn_pixiv_0B_bgcolor: #0096FA; /*影色にも使用＆IE対策*/
+  --btn_pixiv_0B_bground: #0096FA; /*グラデーション対応*/
+  --btn_pixiv_0B_radius: 0.618em; /*角丸み*/
+
+  --btn_pixiv_0B_iunicode: "\eaed"; /*FontAwesome5 or IcoMoon*/
+  --btn_pixiv_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_pixiv_0B_icolor: #FFFFFE; /*アイコン色*/
+}
+/*---- buttonI_pixiv_0B --------*/
+/*---- parent / child ----*/
+a.pbtnI_pixiv_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_pixiv_0B_isize) *2); /*横幅*/
+  height: calc(var(--btn_pixiv_0B_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_pixiv_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_pixiv_0B_bgcolor);
+  background: var(--btn_pixiv_0B_bground);
+  border-radius: var(--btn_pixiv_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtnI_pixiv_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_pixiv_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_pixiv_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_pixiv_0B .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_pixiv_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_pixiv_0B_icolor);
+}
+a.pbtnI_pixiv_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_pixiv_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_pixiv_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_pixiv_0B_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_pixiv_0B --------*/
+a.fa_pixiv_0B {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_pixiv_0B_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_pixiv_0B .fa-stack-2x {
+  color: var(--btn_pixiv_0B_bgcolor);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.fa_pixiv_0B .fa-stack-1x {
+  color: var(--btn_pixiv_0B_icolor);
+}
+a.fa_pixiv_0B :hover {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.fa_pixiv_0B :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_pixiv_0B :active {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+
+/*-------- btn_root_youtube_0B--------*/
+:root {
+  --btn_youtube_0B_bgcolor: #FF0000; /*影色にも使用＆IE対策*/
+  --btn_youtube_0B_bground: #FF0000; /*グラデーション対応*/
+  --btn_youtube_0B_radius: 0.618em; /*角丸み*/
+  --btn_youtube_0B_iunicode: "\ea9d"; /*FontAwesome5 or IcoMoon*/
+  --btn_youtube_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_youtube_0B_icolor: white; /*アイコン色*/
+}
+/*---- buttonI_youtube_0B --------*/
+/*---- parent / child ----*/
+a.pbtnI_youtube_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_youtube_0B_isize) *2); /*横幅*/
+  height: calc(var(--btn_youtube_0B_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_youtube_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_youtube_0B_bgcolor);
+  background: var(--btn_youtube_0B_bground);
+  border-radius: var(--btn_youtube_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtnI_youtube_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_youtube_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_youtube_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_youtube_0B .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_youtube_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_youtube_0B_icolor);
+}
+a.pbtnI_youtube_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_youtube_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_youtube_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_youtube_0B_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_youtube_0B --------*/
+a.fa_youtube_0B {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_youtube_0B_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_youtube_0B .fa-stack-2x {
+  color: var(--btn_youtube_0B_bgcolor);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.fa_youtube_0B .fa-stack-1x {
+  color: var(--btn_youtube_0B_icolor);
+}
+a.fa_youtube_0B :hover {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.fa_youtube_0B :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_youtube_0B :active {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+
+
+/*-------- btn_root_twitter_0B--------*/
+:root {
+  --btn_twitter_0B_bgcolor: #55acee; /*影色にも使用＆IE対策*/
+  --btn_twitter_0B_bground: #55acee; /*グラデーション対応*/
+  --btn_twitter_0B_radius: 0.618em; /*角丸み*/
+  --btn_twitter_0B_iunicode: "\ea96"; /*FontAwesome5 or IcoMoon*/
+  --btn_twitter_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_twitter_0B_icolor: floralwhite; /*アイコン色*/
+}
+/*---- buttonI_twitter_0B --------*/
+/*---- parent / child ----*/
+a.pbtnI_twitter_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_twitter_0B_isize) *2); /*横幅*/
+  height: calc(var(--btn_twitter_0B_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_twitter_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_twitter_0B_bgcolor);
+  background: var(--btn_twitter_0B_bground);
+  border-radius: var(--btn_twitter_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtnI_twitter_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_twitter_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_twitter_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_twitter_0B .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_twitter_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_twitter_0B_icolor);
+}
+a.pbtnI_twitter_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_twitter_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_twitter_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_twitter_0B_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_twitter_0B --------*/
+a.fa_twitter_0B {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_twitter_0B_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_twitter_0B .fa-stack-2x {
+  color: var(--btn_twitter_0B_bgcolor);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.fa_twitter_0B .fa-stack-1x {
+  color: var(--btn_twitter_0B_icolor);
+}
+a.fa_twitter_0B :hover {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.fa_twitter_0B :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_twitter_0B :active {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+/*-------- btn_root_instagram_0B--------*/
+:root {
+  --btn_instagram_0B_bgcolor: rgb(131,58,180); /*影色にも使用＆IE対策*/
+  --btn_instagram_0B_bground: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); /*グラデーション対応*/
+  --btn_instagram_0B_radius: 0.618em; /*角丸み*/
+  --btn_instagram_0B_iunicode: "\ea92"; /*FontAwesome5 or IcoMoon*/
+  --btn_instagram_0B_isize: 1.618em; /*アイコンサイズ*/
+  --btn_instagram_0B_icolor: floralwhite; /*アイコン色*/}
+/*---- buttonI_instagram_0B --------*/
+/*---- parent / child ----*/
+a.pbtnI_instagram_0B {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_instagram_0B_isize) *2); /*横幅*/
+  height: calc(var(--btn_instagram_0B_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_instagram_0B_padding) *0.5); /*外余白*/
+  pointer-events: auto; /*リンクの有効・無効*/
+  /*--------- design ---------*/
+  background-color: var(--btn_instagram_0B_bgcolor);
+  background: var(--btn_instagram_0B_bground);
+  border-radius: var(--btn_instagram_0B_radius);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.pbtnI_instagram_0B:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 
+  0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_instagram_0B:active {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.pbtnI_instagram_0B .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_instagram_0B .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_instagram_0B_isize); /*アイコンサイズ*/
+  color: var(--btn_instagram_0B_icolor);
+}
+a.pbtnI_instagram_0B .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_instagram_0B_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_instagram_0B .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_instagram_0B_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_instagram_0B --------*/
+a.fa_instagram_0B {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_instagram_0B_isize);
+  pointer-events: auto; /*リンクの有効・無効*/
+}
+a.fa_instagram_0B .fa-stack-2x {
+  color: var(--btn_instagram_0B_bgcolor);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+a.fa_instagram_0B .fa-stack-1x {
+  color: var(--btn_instagram_0B_icolor);
+}
+a.fa_instagram_0B :hover {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+a.fa_instagram_0B :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_instagram_0B :active {
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  transform: translateY(0px);
+}
+/*-------- button_facebook_0A--------*/
+:root {
+  --btn_facebook_0A_width: 14em;
+  --btn_facebook_0A_height: 5em;
+  --btn_facebook_0A_padding: 0.618em; /*余白*/
+  --btn_facebook_0A_radius: 5px; /*角丸み*/
+  --btn_facebook_0A_bgcolor: #4064ad; /*影色にも使用＆IE対策*/
+  --btn_facebook_0A_bground: #4064ad; /*グラデーション対応*/ 
+  --btn_facebook_0A_spancolor: white;
+  --btn_facebook_0A_emcolor: white; 
+  --btn_facebook_0A_bcolor: white;
+  --btn_facebook_0A_icolor: white; /*アイコン色*/
+  --btn_facebook_0A_iunicode: "\ea91"; /*FontAwesome5 or IcoMoon*/
+  --btn_facebook_0A_isize: 1.618em; /*アイコンサイズ*/
+  --btn_facebook_0A_iflex: row-reverse; /*アイコン位置*/
+}
+/* -------- parent / child button -------- */
+a.pbtn_facebook_0A {
+  display: inline-block;
+  width: var(--btn_facebook_0A_width); /*横幅*/
+  height: var(--btn_facebook_0A_height); /*縦幅*/
+  margin: calc(var(--btn_facebook_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_facebook_0A_bgcolor);
+  background: var(--btn_facebook_0A_bground);  
+  /* -------- design -------- */
+  border-radius: var(--btn_facebook_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_facebook_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_facebook_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_facebook_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_facebook_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_facebook_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_facebook_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--btn_facebook_0A_padding));
+  display: flex;
+  flex-direction: var(--btn_facebook_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  color: var(--btn_facebook_0A_spancolor);
+}
+a.pbtn_facebook_0A .cbtn em {
+  padding: calc(var(--btn_facebook_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 80%;
+  font-style: normal;
+  color: var(--btn_facebook_0A_emcolor);
+}
+a.pbtn_facebook_0A .cbtn b {
+  padding: calc(var(--btn_facebook_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 150%;
+  color: var(--btn_facebook_0A_bcolor);
+}
+a.pbtn_facebook_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_facebook_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_facebook_0A_icolor);
+  transform: translateY(6%);
+}
+a.pbtn_facebook_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_facebook_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_facebook_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_facebook_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_facebook_0A --------*/
+a.pbtnI_facebook_0A {
+  display: inline-block;
+  width: calc(var(--btn_facebook_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_facebook_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_facebook_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_facebook_0A_bgcolor);
+  background: var(--btn_facebook_0A_bground);
+  /* -------- design -------- */
+  border-radius: var(--btn_facebook_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_facebook_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_facebook_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_facebook_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_facebook_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_facebook_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_facebook_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_facebook_0A .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_facebook_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_facebook_0A_icolor);
+  transform: translate(-50%, -44%);
+}
+a.pbtnI_facebook_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_facebook_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_facebook_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_facebook_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_facebook_0A --------*/
+a.fa_facebook_0A {
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  background: none;
+  font-size: var(--btn_facebook_0A_isize);
+}
+a.fa_facebook_0A .fa-stack-2x {
+  color: var(--btn_facebook_0A_bgcolor);
+  text-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_facebook_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.fa_facebook_0A .fa-stack-1x {
+  color: var(--btn_facebook_0A_icolor);
+}
+a.fa_facebook_0A :hover {
+  text-shadow: 0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_facebook_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_facebook_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_facebook_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+/*-------- button_youtube_0A--------*/
+:root {
+  --btn_youtube_0A_width: 14em;
+  --btn_youtube_0A_height: 14em;
+  --btn_youtube_0A_padding: 0em; /*余白*/
+  --btn_youtube_0A_radius: 50%; /*角丸み*/
+  --btn_youtube_0A_bgcolor: #f1f1f1; /*影色にも使用＆IE対策*/
+  --btn_youtube_0A_bground: #f1f1f1; /*グラデーション対応*/ 
+  --btn_youtube_0A_spancolor: #353535;
+  --btn_youtube_0A_emcolor: #353535; 
+  --btn_youtube_0A_bcolor: #353535;
+  --btn_youtube_0A_icolor: red; /*アイコン色*/
+  --btn_youtube_0A_iunicode: "\ea9d"; /*FontAwesome5 or IcoMoon*/
+  --btn_youtube_0A_isize: 4em; /*アイコンサイズ*/
+  --btn_youtube_0A_iflex: column; /*アイコン位置*/
+}
+/* -------- parent / child button -------- */
+a.pbtn_youtube_0A {
+  display: inline-block;
+  width: var(--btn_youtube_0A_width); /*横幅*/
+  height: var(--btn_youtube_0A_height); /*縦幅*/
+  margin: calc(var(--btn_youtube_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_youtube_0A_bgcolor);
+  background: var(--btn_youtube_0A_bground);  
+  /* -------- design -------- */
+  border-radius: var(--btn_youtube_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_youtube_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_youtube_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_youtube_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_youtube_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_youtube_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_youtube_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--btn_youtube_0A_padding));
+  display: flex;
+  flex-direction: var(--btn_youtube_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  color: var(--btn_youtube_0A_spancolor);
+}
+a.pbtn_youtube_0A .cbtn em {
+  padding: calc(var(--btn_youtube_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 80%;
+  font-style: normal;
+  color: var(--btn_youtube_0A_emcolor);
+}
+a.pbtn_youtube_0A .cbtn b {
+  padding: calc(var(--btn_youtube_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 150%;
+  color: var(--btn_youtube_0A_bcolor);
+}
+a.pbtn_youtube_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_youtube_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_youtube_0A_icolor);
+  transform: translateY(6%);
+}
+a.pbtn_youtube_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_youtube_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_youtube_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_youtube_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_youtube_0A --------*/
+a.pbtnI_youtube_0A {
+  display: inline-block;
+  width: calc(var(--btn_youtube_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_youtube_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_youtube_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_youtube_0A_bgcolor);
+  background: var(--btn_youtube_0A_bground);
+  /* -------- design -------- */
+  border-radius: var(--btn_youtube_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_youtube_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_youtube_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_youtube_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_youtube_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_youtube_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_youtube_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_youtube_0A .cbtn i {
+  position: absolute;  
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_youtube_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_youtube_0A_icolor);
+  transform: translate(-50%, -44%);
+}
+a.pbtnI_youtube_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_youtube_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_youtube_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_youtube_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_youtube_0A --------*/
+a.fa_youtube_0A {
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  background: none;
+  font-size: var(--btn_youtube_0A_isize);
+}
+a.fa_youtube_0A .fa-stack-2x {
+  color: var(--btn_youtube_0A_bgcolor);
+  text-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_youtube_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.fa_youtube_0A .fa-stack-1x {
+  color: var(--btn_youtube_0A_icolor);
+}
+a.fa_youtube_0A :hover {
+  text-shadow: 0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_youtube_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_youtube_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_youtube_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+/*-------- button_instagram_0A--------*/
+:root {
+  --btn_instagram_0A_width: 14em;
+  --btn_instagram_0A_height: 4em;
+  --btn_instagram_0A_padding: 0.618em; /*余白*/
+  --btn_instagram_0A_radius: 100vh; /*角丸み*/
+  --btn_instagram_0A_bgcolor: rgb(131,58,180); /*影色にも使用＆IE対策*/
+  --btn_instagram_0A_bground: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); /*グラデーション対応*/ 
+  --btn_instagram_0A_spancolor: white;
+  --btn_instagram_0A_emcolor: white; 
+  --btn_instagram_0A_bcolor: white;
+  --btn_instagram_0A_icolor: white; /*アイコン色*/
+  --btn_instagram_0A_iunicode: "\ea92"; /*FontAwesome5 or IcoMoon*/
+  --btn_instagram_0A_isize: 2em; /*アイコンサイズ*/
+  --btn_instagram_0A_iflex: row-reverse; /*アイコン位置*/
+}
+/* -------- parent / child button -------- */
+a.pbtn_instagram_0A {
+  display: inline-block;
+  width: var(--btn_instagram_0A_width); /*横幅*/
+  height: var(--btn_instagram_0A_height); /*縦幅*/
+  margin: calc(var(--btn_instagram_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_instagram_0A_bgcolor);
+  background: var(--btn_instagram_0A_bground);  
+  /* -------- design -------- */
+  border-radius: var(--btn_instagram_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_instagram_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_instagram_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_instagram_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_instagram_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--btn_instagram_0A_padding));
+  display: flex;
+  flex-direction: var(--btn_instagram_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  color: var(--btn_instagram_0A_spancolor);
+}
+a.pbtn_instagram_0A .cbtn em {
+  padding: calc(var(--btn_instagram_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 80%;
+  font-style: normal;
+  color: var(--btn_instagram_0A_emcolor);
+}
+a.pbtn_instagram_0A .cbtn b {
+  padding: calc(var(--btn_instagram_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 150%;
+  color: var(--btn_instagram_0A_bcolor);
+}
+a.pbtn_instagram_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_instagram_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_instagram_0A_icolor);
+  transform: translateY(6%);
+}
+a.pbtn_instagram_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_instagram_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_instagram_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_instagram_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_instagram_0A --------*/
+a.pbtnI_instagram_0A {
+  display: inline-block;
+  width: calc(var(--btn_instagram_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_instagram_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_instagram_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_instagram_0A_bgcolor);
+  background: var(--btn_instagram_0A_bground);
+  /* -------- design -------- */
+  border-radius: var(--btn_instagram_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_instagram_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_instagram_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_instagram_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_instagram_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_instagram_0A .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_instagram_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_instagram_0A_icolor);
+  transform: translate(-50%, -44%);
+}
+a.pbtnI_instagram_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_instagram_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_instagram_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_instagram_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_instagram_0A --------*/
+a.fa_instagram_0A {
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  background: none;
+  font-size: var(--btn_instagram_0A_isize);
+}
+a.fa_instagram_0A .fa-stack-2x {
+  color: var(--btn_instagram_0A_bgcolor);
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.fa_instagram_0A .fa-stack-1x {
+  color: var(--btn_instagram_0A_icolor);
+}
+a.fa_instagram_0A :hover {
+  text-shadow: 0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_instagram_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_instagram_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+/*-------- button_twitter_0A--------*/
+:root {
+  --btn_twitter_0A_width: 14em;
+  --btn_twitter_0A_height: 5em;
+  --btn_twitter_0A_padding: 0.618em; /*余白*/
+  --btn_twitter_0A_radius: 0em; /*角丸み*/
+  --btn_twitter_0A_bgcolor: #1c9deb; /*影色にも使用＆IE対策*/
+  --btn_twitter_0A_bground: #1c9deb; /*グラデーション対応*/ 
+  --btn_twitter_0A_spancolor: white;
+  --btn_twitter_0A_emcolor: white; 
+  --btn_twitter_0A_bcolor: white;
+  --btn_twitter_0A_icolor: white; /*アイコン色*/
+  --btn_twitter_0A_iunicode: "\ea96"; /*FontAwesome5 or IcoMoon*/
+  --btn_twitter_0A_isize: 2em; /*アイコンサイズ*/
+  --btn_twitter_0A_iflex: row-reverse; /*アイコン位置*/
+}
+/* -------- parent / child button -------- */
+a.pbtn_twitter_0A {
+  display: inline-block;
+  width: var(--btn_twitter_0A_width); /*横幅*/
+  height: var(--btn_twitter_0A_height); /*縦幅*/
+  margin: calc(var(--btn_twitter_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_twitter_0A_bgcolor);
+  background: var(--btn_twitter_0A_bground);  
+  /* -------- design -------- */
+  border-radius: var(--btn_twitter_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_twitter_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_twitter_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_twitter_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_twitter_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--btn_twitter_0A_padding));
+  display: flex;
+  flex-direction: var(--btn_twitter_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  color: var(--btn_twitter_0A_spancolor);
+}
+a.pbtn_twitter_0A .cbtn em {
+  padding: calc(var(--btn_twitter_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 80%;
+  font-style: normal;
+  color: var(--btn_twitter_0A_emcolor);
+}
+a.pbtn_twitter_0A .cbtn b {
+  padding: calc(var(--btn_twitter_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 150%;
+  color: var(--btn_twitter_0A_bcolor);
+}
+a.pbtn_twitter_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_twitter_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_twitter_0A_icolor);
+  transform: translateY(6%);
+}
+a.pbtn_twitter_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_twitter_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_twitter_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_twitter_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_twitter_0A --------*/
+a.pbtnI_twitter_0A {
+  display: inline-block;
+  width: calc(var(--btn_twitter_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_twitter_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_twitter_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_twitter_0A_bgcolor);
+  background: var(--btn_twitter_0A_bground);
+  /* -------- design -------- */
+  border-radius: var(--btn_twitter_0A_radius);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_twitter_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_twitter_0A_height) rgba(0,0,0,0.2) inset, 
+  0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_twitter_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_twitter_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_twitter_0A .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_twitter_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_twitter_0A_icolor);
+  transform: translate(-50%, -44%);
+}
+a.pbtnI_twitter_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_twitter_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_twitter_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_twitter_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_twitter_0A --------*/
+a.fa_twitter_0A {
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  background: none;
+  font-size: var(--btn_twitter_0A_isize);
+}
+a.fa_twitter_0A .fa-stack-2x {
+  color: var(--btn_twitter_0A_bgcolor);
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+a.fa_twitter_0A .fa-stack-1x {
+  color: var(--btn_twitter_0A_icolor);
+}
+a.fa_twitter_0A :hover {
+  text-shadow: 0px 3px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_twitter_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_twitter_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+
+/*-------- button_sample_0A--------*/
+:root {
+  --btn_sample_0A_width: 14em;
+  --btn_sample_0A_height: 5em;
+  --btn_sample_0A_padding: 0.618em; /*余白*/
+  --btn_sample_0A_radius: 0.618em; /*角丸み*/
+  --btn_sample_0A_bgcolor: steelblue; /*影色にも使用＆IE対策*/
+  --btn_sample_0A_bground: steelblue; /*グラデーション対応*/ 
+  --btn_sample_0A_spancolor: ivory;
+  --btn_sample_0A_emcolor: ivory; 
+  --btn_sample_0A_bcolor: gold;
+  --btn_sample_0A_icolor: floralwhite; /*アイコン色*/
+  --btn_sample_0A_iunicode: "\f879"; /*FontAwesome5 or IcoMoon*/
+  --btn_sample_0A_isize: 1.618em; /*アイコンサイズ*/
+  --btn_sample_0A_iflex: row; /*アイコン位置*/
+}
+/* -------- parent / child button -------- */
+a.pbtn_sample_0A {
+  display: inline-block;
+  width: var(--btn_sample_0A_width); /*横幅*/
+  height: var(--btn_sample_0A_height); /*縦幅*/
+  margin: calc(var(--btn_sample_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_sample_0A_bgcolor);
+  background: var(--btn_sample_0A_bground);  
+  /* -------- design -------- */
+  border-radius: var(--btn_sample_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_sample_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtn_sample_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_sample_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_sample_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtn_sample_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtn_sample_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--btn_sample_0A_padding));
+  display: flex;
+  flex-direction: var(--btn_sample_0A_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  color: var(--btn_sample_0A_spancolor);
+}
+a.pbtn_sample_0A .cbtn em {
+  padding: calc(var(--btn_sample_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 80%;
+  font-style: normal;
+  color: var(--btn_sample_0A_emcolor);
+}
+a.pbtn_sample_0A .cbtn b {
+  padding: calc(var(--btn_sample_0A_padding) *0.5); /*アイコンくっつき防止*/
+  font-size: 150%;
+  color: var(--btn_sample_0A_bcolor);
+}
+a.pbtn_sample_0A .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_sample_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_sample_0A_icolor);
+  transform: translateY(6%);
+}
+a.pbtn_sample_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_sample_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtn_sample_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_sample_0A_iunicode);
+  font-weight: normal;
+}
+/*---- buttonI_sample_0A --------*/
+a.pbtnI_sample_0A {
+  display: inline-block;
+  width: calc(var(--btn_sample_0A_isize) *2); /*横幅*/
+  height: calc(var(--btn_sample_0A_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_sample_0A_padding) *0.5); /*外余白*/
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: var(--btn_sample_0A_bgcolor);
+  background: var(--btn_sample_0A_bground);
+  /* -------- design -------- */
+  border-radius: var(--btn_sample_0A_radius);
+  box-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_sample_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.pbtnI_sample_0A:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--btn_sample_0A_height) rgba(255,255,255,0.2) inset, 
+  0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_sample_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.pbtnI_sample_0A:active {
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+a.pbtnI_sample_0A .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_sample_0A .cbtn i {
+  position: absolute; 
+  font-style: normal;
+  vertical-align: middle;
+  font-size: var(--btn_sample_0A_isize); /*アイコンサイズ*/
+  color: var(--btn_sample_0A_icolor);
+  transform: translate(-50%, -44%);
+}
+a.pbtnI_sample_0A .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_sample_0A_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_sample_0A .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_sample_0A_iunicode);
+  font-weight: normal;
+}
+/*---- fa-stack_sample_0A --------*/
+a.fa_sample_0A {
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  background: none;
+  font-size: var(--btn_sample_0A_isize);
+}
+a.fa_sample_0A .fa-stack-2x {
+  color: var(--btn_sample_0A_bgcolor);
+  text-shadow: 0px 2px 0px rgba(90,90,90,0.5), 0px 2px 0px var(--btn_sample_0A_bgcolor), 0px 3px 2px rgba(0,0,0,0.3);
+}
+a.fa_sample_0A .fa-stack-1x {
+  color: var(--btn_sample_0A_icolor);
+}
+a.fa_sample_0A :hover {
+  text-shadow: 0px 3px 0px rgba(90,90,90,0.5), 0px 3px 0px var(--btn_sample_0A_bgcolor), 0px 4px 2px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+a.fa_sample_0A :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_sample_0A :active {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.15);
+  transform: translateY(2px);
+}
+
+

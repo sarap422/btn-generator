@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+body {
+  font-size: 100%; /*おまじない*/
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 
+  "Segoe UI", "Helvetica Neue", HelveticaNeue, 
+  YuGothic, "Yu Gothic Medium", "Yu Gothic", 
+  Verdana, Meiryo, sans-serif;
+  line-height: 1.618; /*黄金比*/
+}
+s {
+  color: gray;
+}
+
+b, strong, .bold {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 
+  "Segoe UI semibold", "Helvetica Neue", HelveticaNeue, 
+  YuGothic, "Yu Gothic", "Segoe UI", 
+  Verdana, Meiryo, sans-serif;
+}
+/* IEだけに適応 */
+_:lang(x)::-ms-backdrop, .selector {
+  font-family: "Segoe UI", Meiryo, sans-serif;
+}
+nav {
+  font-size: 90%; /*収まり考えて少し小さめ*/
+}
+input[type="text"] {
+  /* 100％ - ボタン分 */
+  width: calc( 100% - 70px );
+  padding: 4px;
+}
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
+}
+dt {
+  font-size: 90%;
+  width: 100%;
+  padding: 2px;
+}
+dd {
+  font-family: monospace, serif;
+  font-size: 80%;
+  text-align: left;
+  width: 100%;
+  padding: 0.618em;
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 120%;
+}
+h2 {
+  font-size: 100%;
+  padding: 0.618em;
+  margin-bottom: 0;
+}
+h3 {
+  margin: 0em; 
+  font-size: 100%;
+  padding: calc(0.618em *0.5) 0.618em;
+}
+h4, h5, h6 {
+  padding: calc(0.618em *0.5) 0.618em;
+  margin-bottom: 0;
+}
+sub {
+  margin-left: -8px;  
+  color: #444;
+}
+/* -------- /△基本設定 ここまで -------- */
+/* -------- .infobox（更新情報用） -------- */
+.infobox {
+  width: auto;
+  height: 15em;
+  overflow: auto;
+  border: 1px solid #CCC;
+}
+.infobox dl { flex: none; }
+.infobox dt {
+  float: left; }
+.infobox dd {
+  background: white;
+}
+/* -------- nav.dropmenu -------- */
+:root {
+  --topmenu_height: 32px; /*トップメニュー縦幅*/
+  --topmenu_padding: 8px 0.618em; /*文字の縦中央寄せ*/
+}
+nav.topmenu {
+  text-align: left;
+  vertical-align: middle;  
+}
+/*PC表示 2カラム以上*/
+/*（わからないのでPC優先）*/
+.toplogo,
+.toplogo p,
+.toplogo img {
+  height: var(--topmenu_height); /*トップメニュー縦幅*/
+  width: auto; 
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* -------- header -------- */
+header.heavensfeel {
+  text-align: center;
+}
+.toplogo, .toplogo a, .toplogo a:hover {
+  color: #222;
+  background: none;
+}
+.toplogo a:hover img {
+  opacity: 1;
+}
+.topmenu li {
+  margin: 4px;
+  padding: 0.309rem 1.618rem;
+  border-left: 1px solid #999;  
+}
+.frontcov {
+  padding: 0.618rem;
+}
+.hdng_covtitle h1 {
+  font-size: 1.5rem;
+}
+.preface {
+	width: 42.5rem;
+	padding: 0 0.618em;
+  font-size: 90%;
+	text-align: left;
+	margin-bottom: 0.618em;
+}
+
+/* -------- nav.menu_0A -------- */
+nav.menu_0A {
+  text-align: center;
+  margin-bottom: 1.618em;
+}
+/*スマホ表示 1カラム*/
+.menu_0A ul {}
+.menu_0A li {
+  min-width: 12.5%;
+  margin: 4px;
+  padding: 5px 0.618em;
+}
+.menu_0A li:last-child {
+  min-width: auto;
+}
+
+/* -------- nav.menu_0B -------- */
+nav.menu_0B {}
+.menu_0B li {
+  display: block;
+  width: 24%;
+  text-align: center;
+}
+.menu_0B a {
+  padding: 12px 0em;
+}
+/* -------- container -------- */
+.gpcontainer {}
+.pcontainer {}
+
+section {
+  margin-bottom: 1.618em;
+}
+.csect,
+.gcsect { 
+  padding: 0.618em;
+  margin-bottom: 0.618em;
+}
+.prettyprint {
+  overflow-x: scroll;
+}
+
+/* -------- aside.irisviel（ → view.css） -------- */
+/* -------- aside.illyasviel（ → view.css） -------- */
+
+/* -------- breadcrumbs_0A -------- */
+nav.breadcrumbs {
+	text-align: left;
+	font-size: 70%;
+}
+.breadcrumbs p {
+	margin-left: auto;
+}
+.breadcrumbs ul {
+}
+.breadcrumbs ul li {
+	padding: 0.618em;
+}
+.breadcrumbs li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f105';
+  margin-right: 0.618em ;
+}
+
+/* -------- footer -------- */
+footer.footer {
+	width: 100%;
+	padding: 0.618em;
+	text-align: center;	
+}
+@media only screen and (max-width: 500px) {
+.footer div {
+	margin-left: 1.618em;}
+} /*@media only screen and (max-width: 500px)*/
+
+.footer b {
+	font-size: 110%;
+}
+.footer .tel_bold {
+	font-size: 130%;
+	font-weight: bold;
+	color: #FFC458;
+}

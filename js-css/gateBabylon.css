@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.palette {
+	padding: 2px 2px 0px;
+	background: #7f7f7f;
+	margin: 0.618em 0em;
+}
+input.paint {
+	width: 20px;
+	height: 20px;
+    padding: 0; 
+    margin: 0px -3px -4px 0px; 
+    border: 0;
+}
+input[title="white"] { background: white; }
+input[title="black"] { background: black; }
+input[title="dimgray"] { background: dimgray; }
+input[title="gray"] { background: gray; }
+input[title="darkgray"] { background: darkgray; }
+input[title="silver"] { background: silver; }
+input[title="lightgray"] { background: lightgray; }
+input[title="gainsboro"] { background: gainsboro; }
+input[title="whitesmoke"] { background: whitesmoke; }
+input[title="snow"] { background: snow; }
+input[title="ghostwhite"] { background: ghostwhite; }
+input[title="floralwhite"] { background: floralwhite; }
+input[title="mistyrose"] { background: mistyrose; }
+input[title="ivory"] { background: ivory; }
+input[title="mintcream"] { background: mintcream; }
+input[title="honeydew"] { background: honeydew; }
+input[title="azure"] { background: azure; }
+input[title="aliceblue"] { background: aliceblue; }
+input[title="lavender"] { background: lavender; }
+input[title="lightsteelblue"] { background: lightsteelblue; }
+input[title="slategray"] { background: slategray; }
+input[title="darkslategray"] { background: darkslategray; }
+input[title="steelblue"] { background: steelblue; }
+input[title="royalblue"] { background: royalblue; }
+input[title="midnightblue"] { background: midnightblue; }
+input[title="blue"] { background: blue; }
+input[title="deepskyblue"] { background: deepskyblue; }
+input[title="skyblue"] { background: skyblue; }
+input[title="paleturquoise"] { background: paleturquoise; }
+input[title="turquoise"] { background: turquoise; }
+input[title="mediumturquoise"] { background: mediumturquoise; }
+input[title="darkturquoise"] { background: darkturquoise; }
+input[title="lightseagreen"] { background: lightseagreen; }
+input[title="cadetblue"] { background: cadetblue; }
+input[title="teal"] { background: teal; }
+input[title="darkgreen"] { background: darkgreen; }
+input[title="green"] { background: green; }
+input[title="seagreen"] { background: seagreen; }
+input[title="mediumseagreen"] { background: mediumseagreen; }
+input[title="mediumaquamarine"] { background: mediumaquamarine; }
+input[title="darkseagreen"] { background: darkseagreen; }
+input[title="aquamarine"] { background: aquamarine; }
+input[title="palegreen"] { background: palegreen; }
+input[title="limegreen"] { background: limegreen; }
+input[title="olivedrab"] { background: olivedrab; }
+input[title="olive"] { background: olive; }
+input[title="darkkhaki"] { background: darkkhaki; }
+input[title="palegoldenrod"] { background: palegoldenrod; }
+input[title="cornsilk"] { background: cornsilk; }
+input[title="lemonchiffon"] { background: lemonchiffon; }
+input[title="wheat"] { background: wheat; }
+input[title="burlywood"] { background: burlywood; }
+input[title="tan"] { background: tan; }
+input[title="khaki"] { background: khaki; }
+input[title="gold"] { background: gold; }
+input[title="orange"] { background: orange; }
+input[title="darkorange"] { background: darkorange; }
+input[title="goldenrod"] { background: goldenrod; }
+input[title="peru"] { background: peru; }
+input[title="darkgoldenrod"] { background: darkgoldenrod; }
+input[title="chocolate"] { background: chocolate; }
+input[title="sienna"] { background: sienna; }
+input[title="maroon"] { background: maroon; }
+input[title="brown"] { background: brown; }
+input[title="firebrick"] { background: firebrick; }
+input[title="indianred"] { background: indianred; }
+input[title="rosybrown"] { background: rosybrown; }
+input[title="darksalmon"] { background: darksalmon; }
+input[title="lightcoral"] { background: lightcoral; }
+input[title="salmon"] { background: salmon; }
+input[title="lightsalmon"] { background: lightsalmon; }
+input[title="coral"] { background: coral; }
+input[title="tomato"] { background: tomato; }
+input[title="red"] { background: red; }
+input[title="crimson"] { background: crimson; }
+input[title="mediumvioletred"] { background: mediumvioletred; }
+input[title="deeppink"] { background: deeppink; }
+input[title="hotpink"] { background: hotpink; }
+input[title="palevioletred"] { background: palevioletred; }
+input[title="pink"] { background: pink; }
+input[title="thistle"] { background: thistle; }
+input[title="plum"] { background: plum; }
+input[title="orchid"] { background: orchid; }
+input[title="mediumorchid"] { background: mediumorchid; }
+input[title="darkorchid"] { background: darkorchid; }
+input[title="purple"] { background: purple; }
+input[title="indigo"] { background: indigo; }
+input[title="mediumpurple"] { background: mediumpurple; }
+input[title="darkslateblue"] { background: darkslateblue; }
+input[title="slateblue"] { background: slateblue; }
+input[title="mediumslateblue"] { background: mediumslateblue; }

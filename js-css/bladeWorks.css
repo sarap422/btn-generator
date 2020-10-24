@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+i { font-style: normal; }
+
+/*pArea_HTML*/
+#pArea_HTML, #pArea_CSS { position: relative; }
+#pArea_HTML button,
+#pArea_CSS button {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+  background: none;
+  border: 0;
+}
+#pArea_HTML button:hover,
+#pArea_CSS button:hover {
+    background: rgba(255,255,255,0.2);
+}
+#pArea_HTML i:before,
+#pArea_CSS i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c5";
+  font-weight: 400;
+  font-size: 1.618em;
+  color: #222;
+}

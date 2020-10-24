@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+th p, td p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table_0A .fa-star { color: #FF8933; }
+.table_0A .fa-circle { color: #444; }
+.table_0A .rest {
+	color: #F93140; 
+	font-size: 110%;
+	font-weight: bold;
+}
+.table_0A .star {
+	color: #FF8933;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/* ▽テーブルの角に丸みをつける▽ */
+/* ※hflr ― head-floor ― 見出し行（階） */
+/* ※hcol ― head-column ― 見出し列（柱） */
+table.table_0A {
+  table-layout: fixed;   /* 列幅の均等配置 */
+  width: 100%;    /* テーブルの幅 */
+  margin: 0 auto;
+  background: #FFF;
+  border: 1px solid #AAA;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+}
+.table_0A caption {
+  caption-side: bottom;
+  text-align: right;
+}
+.table_0A tr.hflr th {
+  background: #007367;    /* 見出し行（階）の色 */
+  color: #FFF;
+  font-weight: bold;
+}
+.table_0A th.hcol, .table_0A td.hcol {
+  width: 25%;   /* 見出し列（柱）th・td の横幅・太さ */
+}
+.table_0A th.hcol {
+  background: #3A3857;   /* 見出し列（柱）th の色 */
+  color: #FFF;
+  font-weight: bold;
+}
+.table_0A td.hcol {
+  background: #D1DFF9;   /* 見出し列（柱）td の色 */
+}
+.table_0A th, .table_0A td {
+  padding: 0.618em 0;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  border-left: 1px solid #AAA; 
+}
+.table_0A tr th:first-child,
+.table_0A tr td:first-child {
+  border-left: none;
+}
+.table_0A tr:last-child th,
+.table_0A tr:last-child td {
+  border-bottom: none;
+}
+.table_0A tr:first-child th:first-child,
+.table_0A tr:first-child td:first-child {
+  border-radius: 9px 0 0 0;
+}
+.table_0A tr:first-child th:last-child,
+.table_0A tr:first-child td:last-child {
+  border-radius: 0 9px 0 0;
+}
+.table_0A tr:last-child th:first-child,
+.table_0A tr:last-child td:first-child {
+  border-radius: 0 0 0 9px;
+}
+.table_0A tr:last-child th:last-child,
+.table_0A tr:last-child td:last-child {
+  border-radius: 0 0 9px 0;
+}
+/* △テーブルの角に丸みをつける△ */
+
+

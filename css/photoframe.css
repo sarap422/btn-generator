@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* -------- ▽footnote -------- */
+:root {
+  --footnote_margin: 0.618em;
+  --footnote_width: calc(100% - var(--footnote_margin) *2);
+}
+
+/*スマホ表示用 1カラム以下*/
+@media only screen and (max-width: 500px) {
+:root {
+  --footnote_width: calc(100% - var(--footnote_margin) *2);
+}
+} /*@media only screen and (max-width: 500px)*/
+
+.footnoteTL {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteTL span {
+  position: absolute; /*子配置*/
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteTL img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.footnoteTR {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteTR span {
+  position: absolute; /*子配置*/
+  top: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteTR img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.footnoteBR {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteBR span {
+  position: absolute; /*子配置*/
+  bottom: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteBR img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.footnoteBL {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteBL span {
+  position: absolute; /*子配置*/
+  bottom: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteBL img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.footnoteTC {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteTC span {
+  position: absolute; /*子配置*/
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  width: 100%;
+  text-align: center;
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteTC img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.footnoteBC {
+  position: relative; /*親配置*/
+  width: var(--footnote_width);
+  margin: var(--footnote_margin);
+}
+.footnoteBC span {
+  position: absolute; /*子配置*/
+  width: 100%;
+  text-align: center;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 90%;
+  padding: 0 0.618em;
+  color: #FFF;
+  background: darkslategray;
+}
+.footnoteBC img {
+  width: 100%;
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* -------- ▽photoframe -------- */
+:root {
+  --photoframe_margin: 0.618em;
+  --photoframe_width: calc(100% - var(--photoframe_margin) *2);
+}
+
+/*スマホ表示用 1カラム以下*/
+@media only screen and (max-width: 500px) {
+:root {
+  --photoframe_width: calc(100% - var(--photoframe_margin) *2);
+}
+} /*@media only screen and (max-width: 500px)*/
+
+.photoframeBR {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: 1.618em 0.618em calc(1.618em * 2);
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeBR span {
+  position: absolute; /*子配置*/
+  bottom: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeBR img {
+  width: 100%;
+}
+.photoframeBL {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: 1.618em 0.618em calc(1.618em * 2);
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeBL span {
+  position: absolute; /*子配置*/
+  bottom: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeBL img {
+  width: 100%;
+}
+.photoframeTL {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: calc(1.618em * 2) 0.618em 1.618em;
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeTL span {
+  position: absolute; /*子配置*/
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeTL img {
+  width: 100%;
+}
+.photoframeTR {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: calc(1.618em * 2) 0.618em 1.618em;
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeTR span {
+  position: absolute; /*子配置*/
+  top: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeTR img {
+  width: 100%;
+}
+.photoframeTC {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: calc(1.618em * 2) 0.618em 1.618em;
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeTC span {
+  position: absolute; /*子配置*/
+  width: 100%;
+  text-align: center;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeTC img {
+  width: 100%;
+}
+.photoframeBC {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width);
+  margin: var(--photoframe_margin);
+  padding: 1.618em 0.618em calc(1.618em * 2);
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeBC span {
+  position: absolute; /*子配置*/
+  width: 100%;
+  text-align: center;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(0, 0);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeBC img {
+  width: 100%;
+}
+.photoframeLC {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width); 
+  margin: var(--photoframe_margin);
+  margin-right: 1.618em;
+  padding: 1.618em 0.618em 1.618em 10em;
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeLC span {
+  position: absolute; /*子配置*/
+  top: 50%;
+  left: 0%;
+  transform: translate(0.618em, -50%);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeLC img {
+  width: 100%;
+}
+.photoframeRC {
+  position: relative; /*親配置*/
+  width: var(--photoframe_width); 
+  margin: var(--photoframe_margin);
+  margin-right: 1.618em;
+  padding: 1.618em 10em 1.618em 0.618em;
+  background: linear-gradient(120deg, white, ghostwhite);
+  border: 1px solid darkslategray;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.photoframeRC span {
+  position: absolute; /*子配置*/
+  top: 50%;
+  right: 0%;
+  transform: translate(-1.118em, -50%);
+  font-size: 100%;
+  padding: 0.618em;
+  color: #222;
+}
+.photoframeRC img {
+  width: 100%;
+}

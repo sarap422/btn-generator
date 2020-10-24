@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>アイコンも使える CSSかんたんボタンジェネレーター | シンプルなアイコン付きのボタンを簡単に作成</title>
+<meta name="description" content="シンプルなアイコン付きのボタンを簡単に作成。アイコンはFontAwesome・IcoMoonに対応（予定）、上下左右に設置出来ます。">
+<meta name="keywords" content="">
+<!-- スマホ対応 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- iPhone電話番号自動認識OFF -->
+<meta name="format-detection" content="telephone=no">
+<!-- 旧IE・Edge対策 -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<!-- icon / fonts -->
+<link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+<link href="icomoon/style.css" rel="stylesheet">
+<!-- stylesheets -->
+<link rel="stylesheet" href="skin/google-prettify-monokai/prettify.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="js-css/gaeBolg.css">
+<link rel="stylesheet" href="js-css/prelatiBook.css">
+<link rel="stylesheet" href="js-css/bladeWorks.css">
+<link rel="stylesheet" href="css/btn.css">
+<link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/photoframe.css">
+<link rel="stylesheet" href="css/list.css">
+<link rel="stylesheet" href="css/primer.css">
+<link rel="stylesheet" href="css/style-3col.css">
+<link rel="stylesheet" href="css/btn-generator.css">
+<link rel="stylesheet" href="js-css/gateBabylon.css">
+<!-- レスポンシブ用 なるべく最後に読み込む -->
+<link rel="stylesheet" href="css/view.css">
+<!-- 補助的に。スタイルシートテスト用 -->
+<style></style>
+</head>
+
+<body>
+<!-- body（背景等）--> 
+
+<!-- .grandparent, parent wrapper（全体幅） -->
+<div class="gpwrappper">
+<div class="pwrappper">
+  <header class="heavensfeel">
+    <div class="topbar flexboxCCC_pcvRSbC">
+      <div class="toplogo"> <a class="flexboxRCC" href="index.html"><img src="img/logo/logo.png" alt="SARAP422"><b>&ensp;SARAP422</b></a> </div>
+      <!-- /.toplogo -->
+      
+      <nav class="topmenu">
+        <ul class="flexboxRCC">
+          <li><a href="../btn-generator/btn-generator.html"><i class="icon-button1"></i> Button Generator</a></li>
+          <li><s>List Generator（予定）</s></li>
+        </ul>
+      </nav>
+      <!-- /.topmenu --> 
+    </div>
+    <!-- /.topbar  -->
+    
+    <div class="frontcov flexboxCCC">
+      <div class="hdng_covtitle">
+        <p class="subtitle mTB0">アイコンも使える</p>
+        <h1 class="covtitle c_caviar">CSSかんたんボタンジェネレーター</h1>
+      </div>
+      <!-- hdng_covtitle -->
+      
+      <div class="preface">CSSかんたんボタンジェネレーターは、シンプルなアイコン付きのボタンを生成するGUIツールです。アイコンはFontAwesome・IcoMoonに対応、上下左右に設置出来ます。 </div>
+      <!-- /.preface --> 
+    </div>
+    <!-- /.frontcov --> 
+    
+  </header>
+  <!-- /header -->
+  
+  <div class="flyleaf">
+    <nav class="menu_0A">
+      <ul class="flexboxCCC_pcvRCC">
+        <li>
+          <p class="mTB0 marginC">アイコン位置<br>
+            <label>
+              <input type="radio" name="ordr__btn_iflex" value="column">
+              <i class="fa fa-arrow-up "></i></label>
+            <label>
+              <input type="radio" name="ordr__btn_iflex" value="row-reverse">
+              <i class="fa fa-arrow-right "></i></label>
+            <label>
+              <input type="radio" name="ordr__btn_iflex" value="column-reverse">
+              <i class="fa fa-arrow-down "></i></label>
+            <label>
+              <input type="radio" name="ordr__btn_iflex" value="row" checked>
+              <i class="fa fa-arrow-left "></i></label>
+          </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">アイコン<br>
+            <label title="Font Awesome">
+              <input type="radio" name="ordr__btn_ipseudo" value="psdo_Awes" checked>
+              <i class="fa fa-flag"></i></label>
+            <label title="IcoMoon">
+              <input type="radio" name="ordr__btn_ipseudo" value="psdo_Moon">
+              <i class="icon-IcoMoon"></i></label>
+            <input type="radio" name="ordr__btn_ipseudo" value="off">
+            なし </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">hover色<br>
+            <input type="radio" name="ordr__btn_hover" value="bright" checked>
+            明
+            <input type="radio" name="ordr__btn_hover" value="dark">
+            暗
+            <input type="radio" name="ordr__btn_hover" value="off">
+            なし </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">影色<br>
+            <input type="radio" name="ordr__btn_shadow" value="01">
+            影1
+            <input type="radio" name="ordr__btn_shadow" value="02" checked>
+            影2
+            <input type="radio" name="ordr__btn_shadow" value="off">
+            なし </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">動き<br>
+            <input type="radio" name="ordr__btn_translate" value="on" checked>
+            あり
+            <input type="radio" name="ordr__btn_translate" value="off">
+            なし </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">リンク<br>
+            <input type="radio" name="ordr__btn_pointerEve" value="on" checked>
+            有効
+            <input type="radio" name="ordr__btn_pointerEve" value="off">
+            無効 </p>
+        </li>
+        <li>
+          <p class="mTB0 marginC">
+            <input type="button" value="送信" onclick="String__btn();">
+          </p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /.flyleaf --> 
+  
+  <!-- grandparent_container --> 
+  <!-- parent_container -->
+  <div class="gpcontainer">
+    <div class="pcontainer flexboxCStS_pcvRStS">
+      <main class="einzbern">
+        <nav class="menu_0B"><!-- nav.menu_0B -->
+          <ul id="invisibleTAB" class="flexboxRStC">
+            <li><a href="TAB_All" class="curTAB">　ALL　</a></li>
+            <li><a href="TAB_IconBtn">　ボタン　</a></li>
+            <!-- <li><a href="TAB_TextBtn">アイコンなし</a></li> -->
+            <li><a href="TAB_Icon">アイコンだけ</a></li>
+          </ul>
+        </nav>
+        <!-- /nav.menu_0B -->
+        
+<section class="psect_0A"><!-- section_0A -->
+<h2 id="section01">ボタンサンプル</h2>
+<div class="csect">
+<div id="" class="gcsect">
+<div id="viewTAB_0A">
+<div id="viewTAB_0A_IconBtn">
+<p> <a class="pbtn_custom_ALL"><span id="retail_cbtn_01" class="cbtn psdo_Awes"><i></i><em><span id="retail__btn_emtxt">ご相談はお気軽にどうぞ</span><br>
+<b id="retail__btn_btxt">012-345-6789</b></em></span></a> ボタンサンプルです。 </p>
+<p> <a class="pbtn_custom_ALL"><span id="retail_cbtn_02" class="cbtn psdo_Awes"><span id="retail__btn_spantxt">ご相談はお気軽にどうぞ</span></span></a> ボタンサンプルです。（シングル）</p>
+</div>
+<div id="viewTAB_0A_Icon">
+<p><a class="pbtnI_custom_ALL"> <span id="retail_cbtn_03" class="cbtn psdo_Awes"><i></i></span></a>ボタンサンプルです。（アイコンのみ）</p>
+<p><a class="fa_custom_ALL"><span class="fa-stack"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-circle fa-stack-2x autor"></i><i class="fas fa-flag fa-stack-1x"></i></span></a> <sub>※fa-stack</sub>　ボタンサンプルです。</p>
+<p>（※fa-stack：Font Awesome を重ねて表示）</p>
+</div>
+</div>
+<!-- /#viewTAB_0A -->
+<p class="alignR"><i class="fa fa-chevron-circle-right c_strawberry"></i> <a href="sample/btn.html">他のサンプル</a></p>
+</div>
+<!-- /.gcsect -->
+            
+            <div id="pAcc_0A">
+              <h3 class="close">使い方（クリックで開きます）<i></i></h3>
+              <div class="cAcc">
+                <div class="gcsect">
+                  <p>CSSをコピーし、「css/btn.css」フォルダ・ファイルで保存、</p>
+                  <pre><code class="prettyprint">&lt;link rel="stylesheet" href="css/btn.css"&gt;&nbsp;</code></pre>
+                  <p>のような形で使います。</p>
+                  <p>アイコン表示に「Font Awesome 5 free」を使用しているので、head部に</p>
+                  <pre><code class="prettyprint">&lt;link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet"&gt;&nbsp;</code></pre>
+                  <p>の表記が必要です。</p>
+                  <p> <i class="fa fa-chevron-circle-right c_blueberry"></i> <a href="sample/sample.zip">sample.zip</a>（HTMLとCSS構成のサンプル）</p>
+                </div>
+                <!-- /.gcsect -->
+                <h4>Font Awesome と、疑似要素について</h4>
+                <div class="gcsect">
+                  <p>変更や管理の手間的に疑似要素を使用しているため、アイコンはUnicode（f以降の4文字）を入力する必要があります。<br>
+                    どうも「Font Awesome CDN」で疑似要素の場合、<b>「SOLID：900（fas）」</b>以外は拾ってくれないようなので、反映されない場合は「fa-stack」や"psdo"クラスなしのHTMLタグで使ってみてください。</p>
+                  <p>（一部使えるようなので、参考用の font-weight）<br>
+                    <b>SOLID</b>：900 / <b>REGULAR</b>：400 / <b>LIGHT</b>：300 / <b>BRANDS</b>：400</p>
+                </div>
+                <div class="gcsect">
+                  <p>HTMLタグで使う場合は「PIXEL LAB」さんが探しやすくて便利です。</p>
+                  <p class="alignC"><a href="https://www.pixelimage.jp/blog/2015/07/font_awesome.html" class="pbtn_PixelLab_0A"><span class="cbtn psdo_Awes"><em>faアイコンを素早く検索しコピー<br>
+                    <b>PIXEL LAB</b></em></span></a></p>
+                </div>
+                <!-- /.gcsect -->
+                <h4>WEBアイコン『IcoMoon』について</h4>
+                <div class="gcsect">
+                  <p>「Font Awesome」さんにないアイコンが結構あるので（特にpixivなど日本国内のブランド）、SVGからWEBアイコンに変換できる「IcoMoon」用のCSSも書き出せるようにしました。「IcoMoon」さんにはCDNがありませんので、自分でサーバーに設置する必要があります。</p>
+                  <p class="alignC"><i class="fa fa-chevron-circle-right c_avocado"></i> <a href="https://mndangler.net/2017/04/webicon_icomoon_and_font-awesome/"><b>Webアイコン「IcoMoon」の使い方と追加方法｜魔ッドアングラー</b></a></p>
+                  <p>※「IcoMoon」さんで作成したアイコンは「e900」から順番にUnicodeが振られていくので、注意しないと追加時にUnicodeがズレて意図しないアイコン表示になってしまいますのでご注意ください。<br>
+                    （一応当サイトでは「e900～eaea」までを『IcoMoon Free』で割り振りの形）</p>
+                </div>
+                <!-- /.gcsect -->
+                <h4>公式ロゴのダウンロードとガイドラインについて</h4>
+                <div class="gcsect">
+                  <p>ブランドロゴをWEBアイコンとして使う場合、公式に配布しているロゴをダウンロードして使うのが早いですし、なによりガイドラインを確認する意味において適切です。『syncer』さんが「pixiv」「chatwork」「はてな」といった国内サービスも含め、かなりの分量をまとめてくださっているのでこちらを参考にするのが便利です。</p>
+                  <p class="alignC"><i class="fa fa-chevron-circle-right c_avocado"></i> <a href="https://syncer.jp/brand-logos"><b>webサイトの公式ロゴ素材まとめ｜syncer</b></a></p>
+                </div>
+                <!-- /.gcsect -->
+                <h4>グラデーションについて</h4>
+                <div class="gcsect">
+                  <p>グラデーションが必要なケースがあるので（instagramなど）、グラデーションに対応させました。影色にbgcolorを使用しているのと「CSS：linear-gradient」に対応していないIE対策を兼ねて「background-color」「background」で分離しています。</p>
+                  <p>グラデーションは「CSS Gradient」さんが見やすくてわかりやすい感じだったので、上段を「btn_bgcolor」、下段を「btn_bground」にコピペします。</p>
+                  <p><img src="https://i.gyazo.com/thumb/1000/796aa6e62e17892e9dda538d96313a9b-jpg.jpg" alt="CSS Gradient"></p>
+                  <p class="alignC"><a href="https://cssgradient.io/" class="pbtn_CSSGradient_0A"> <span class="cbtn psdo_Awes"><i></i> <em>CSS Gradient</em></span></a></p>
+                </div>
+                <!-- /.gcsect -->
+                <div class="gcsect">
+                  <p>他に「Eggradients」さんもカラーが豊富かつコピペがわかりやすくて使いやすいです。</p>
+                  <p><img src="https://i.gyazo.com/thumb/1000/35dbb1924fad67c6aa9b0b8424380f0c-png.png" alt="Eggradients"></p>
+                  <p class="alignC"><a href="https://www.eggradients.com/gradient-color" class="pbtn_Eggradients_0A"><span class="cbtn psdo_Awes"> <i></i><b>Eggradients</b></span></a></p>
+                </div>
+                <!-- /.gcsect -->
+                <div class="gcsect infobox">
+                  <dl>
+                    <dt>2020/08/09</dt>
+                    <dd>　カラーコードを取得できるスウォッチ的なボタンの実装、ノートPCでも使えるようにサイズ・レイアウト調整。入れたかった要素はほぼ全部入れられたのでこれでだいたい完成。あとは使いながら調整みたいな。</dd>
+                    <dt>2020/08/07</dt>
+                    <dd>　用途別でのタブ切り替え・CSS書き出しに対応しました。</dd>
+                    <dt>2020/08/05</dt>
+                    <dd>　背景グラデーション + IcoMoon用のCSS書き出しに対応しました。</dd>
+                    <dt>2020/07/30</dt>
+                    <dd>　CSS・HTMLコードまで書き出せるようになったのでとりあえず公開しました。</dd>
+                  </dl>
+                </div>
+                <!-- /.gcsect --> 
+              </div>
+              <!-- /.cAcc --> 
+            </div>
+            <!-- /.pAcc_0A --> 
+            
+          </div>
+          <!-- /child_section --> 
+        </section>
+        <!-- /section_0A -->
+        
+<section class="psect_0A"><!-- section_0A -->
+<h2 id="pArea_HTML">HTML表示
+<button type="submit" title="クリップボードにコピー" onclick="bladeWorks_HTML();"><i></i><b> COPY</b></button>
+</h2>
+<div class="csect prettyprint">
+<div>
+<pre><code id="cArea_HTML" class="prettyprint"><div id="viewTAB_0B">
+<div id="viewTAB_0B_IconBtn"> &lt;!-- アイコン + 二段 --&gt;          
+&lt;a class=&quot;pbtn_<span id="retailHTM__btn_classname_01"></span>&quot;&gt;
+&lt;span class=&quot;cbtn <span id="retailHTM__btn_ipseudo_01">psdo_Awes</span>&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;em&gt;<span id="retailHTM__btn_emtxt_01">ご相談はお気軽にどうぞ</span>&lt;br&gt;
+&lt;b&gt;<span id="retailHTM__btn_btxt_01">012-345-6789</span>&lt;/b&gt;&lt;/em&gt;&lt;/span&gt;&lt;/a&gt;
+
+&lt;!-- シングル --&gt;
+&lt;a class=&quot;pbtn_<span id="retailHTM__btn_classname_02"></span>&quot;&gt;
+&lt;span class=&quot;cbtn <span id="retailHTM__btn_ipseudo_02">psdo_Awes</span>&quot;&gt;<span id="retailHTM__btn_spantxt_01">ご相談はお気軽にどうぞ</span>&lt;/span&gt;&lt;/a&gt; </div>
+<div id="viewTAB_0B_Icon"> &lt;!-- アイコンだけ --&gt;
+&lt;a class=&quot;pbtnI_<span id="retailHTM__btn_classname_03"></span>&quot;&gt;
+&lt;span class=&quot;cbtn <span id="retailHTM__btn_ipseudo_03">psdo_Awes</span>&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+
+&lt;!-- fa-stack --&gt;
+&lt;a class=&quot;fa_<span id="retailHTM__btn_classname_04"></span>&quot;&gt;&lt;span class=&quot;fa-stack&quot;&gt;
+&lt;i class=&quot;fas fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-circle fa-stack-2x autor&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-flag fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;sub&gt;※fa-stack&lt;/sub&gt; </div>
+</div><!-- /#viewTAB_0B -->
+
+</code></pre>
+</div>
+<!-- /div --> 
+</div>
+<!-- /child_section /prettyprint lang-css --> 
+</section>
+<!-- /section_0A -->
+        
+<section class="psect_0A"><!-- section_0A -->
+<h2 id="pArea_CSS">CSS表示
+<button type="submit" title="クリップボードにコピー" onclick="bladeWorks_CSS();"><i></i><b> COPY</b></button>
+</h2>
+<div class="csect prettyprint">
+<div>
+<pre><code id="cArea_CSS" class="prettyprint">
+/*-------- btn_root_<span id="retailCSS__btn_classname_01"></span>--------*/
+:root {<div id="viewTAB_0C"><div id="viewTAB_0C_TextBtn01">--btn_<span id="retailvarM__btn_classname_01"></span>_width: <span id="retail__btn_width"></span>;
+--btn_<span id="retailvarM__btn_classname_02"></span>_height: <span id="retail__btn_height"></span>;
+--btn_<span id="retailvarM__btn_classname_03"></span>_padding: <span id="retail__btn_padding"></span>; /*余白*/</div>--btn_<span id="retailvarM__btn_classname_05"></span>_bgcolor: <span id="retail__btn_bgcolor"></span>; /*影色にも使用＆IE対策*/
+--btn_<span id="retailvarM__btn_classname_06"></span>_bground: <span id="retail__btn_bground"></span>; /*グラデーション対応*/
+--btn_<span id="retailvarM__btn_classname_04"></span>_radius: <span id="retail__btn_radius"></span>; /*角丸み*/
+<div id="viewTAB_0C_TextBtn02">--btn_<span id="retailvarM__btn_classname_07"></span>_spancolor: <span id="retail__btn_spancolor"></span>;
+--btn_<span id="retailvarM__btn_classname_08"></span>_emcolor: <span id="retail__btn_emcolor"></span>; 
+--btn_<span id="retailvarM__btn_classname_09"></span>_bcolor: <span id="retail__btn_bcolor"></span>;</div><div id="viewTAB_0C_Icon">--btn_<span id="retailvarM__btn_classname_11"></span>_iunicode: <span id="retail__btn_iunicode"></span>; /*FontAwesome5 or IcoMoon*/
+--btn_<span id="retailvarM__btn_classname_12"></span>_isize: <span id="retail__btn_isize"></span>; /*アイコンサイズ*/
+--btn_<span id="retailvarM__btn_classname_10"></span>_icolor: <span id="retail__btn_icolor"></span>; /*アイコン色*/</div><div id="viewTAB_0C_IconBtn">--btn_<span id="retailvarM__btn_classname_13"></span>_iflex: <span id="retail__btn_iflex"></span>; /*アイコン位置*/</div>}</div><!-- /#viewTAB_0C --><div id="viewTAB_0D"><div id="viewTAB_0D_TextBtn">/*---- button_<span id="retailCSS__btn_classname_02"></span> -------- */
+/*---- parent / child ----*/
+a.pbtn<span id="retailCSS__btn_N_01"></span>_<span id="retailCSS__btn_classname_03"></span> {
+display: inline-block;
+position: relative;
+text-align: center;
+vertical-align: middle;
+width: var(--btn_<span id="retailvarM__btn_classname_14"></span>_width); /*横幅*/
+height: var(--btn_<span id="retailvarM__btn_classname_15"></span>_height); /*縦幅*/
+margin: calc(var(--btn_<span id="retailvarM__btn_classname_16"></span>_padding) *0.5); /*外余白*/
+pointer-events: <span id="retailCSS__btn_pointerEve_01"></span>; /*リンクの有効・無効*/
+/*--------- design ---------*/
+background-color: var(--btn_<span id="retailvarM__btn_classname_17"></span>_bgcolor);
+background: var(--btn_<span id="retailvarM__btn_classname_18"></span>_bground);  
+border-radius: var(--btn_<span id="retailvarM__btn_classname_19"></span>_radius);
+box-shadow: <span id="retailCSS__btn_shadow_01"></span>;
+}
+a.pbtn<span id="retailCSS__btn_N_02"></span>_<span id="retailCSS__btn_classname_04"></span>:hover {
+text-decoration: none;
+box-shadow: <span id="retailCSS__btn_hover_01"></span>, <span id="retailCSS__btn_shadowH_01"></span>;
+transform: <span id="retailCSS__btn_translateH_01"></span>;
+}
+a.pbtn<span id="retailCSS__btn_N_03"></span>_<span id="retailCSS__btn_classname_05"></span>:active {
+box-shadow: <span id="retailCSS__btn_shadowA_01"></span>;
+transform: <span id="retailCSS__btn_translateA_01"></span>;
+}
+a.pbtn<span id="retailCSS__btn_N_04"></span>_<span id="retailCSS__btn_classname_06"></span> .cbtn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+flex-direction: var(--btn_<span id="retailvarM__btn_classname_21"></span>_iflex); /*アイコン位置*/
+justify-content: center;
+align-items: center;
+width: calc(100% - var(--btn_<span id="retailvarM__btn_classname_20"></span>_padding));
+display: flex;
+color: var(--btn_<span id="retailvarM__btn_classname_22"></span>_spancolor);
+}
+a.pbtn<span id="retailCSS__btn_N_05"></span>_<span id="retailCSS__btn_classname_07"></span> .cbtn em {
+font-size: 80%;
+font-style: normal;
+padding: calc(var(--btn_<span id="retailvarM__btn_classname_23"></span>_padding) *0.5); /*アイコンくっつき防止*/
+color: var(--btn_<span id="retailvarM__btn_classname_24"></span>_emcolor);
+}
+a.pbtn<span id="retailCSS__btn_N_06"></span>_<span id="retailCSS__btn_classname_08"></span> .cbtn b {
+font-size: 150%;
+padding: calc(var(--btn_<span id="retailvarM__btn_classname_25"></span>_padding) *0.5); /*アイコンくっつき防止*/
+color: var(--btn_<span id="retailvarM__btn_classname_26"></span>_bcolor);
+}</div><div id="viewTAB_0D_IconBtn">a.pbtn<span id="retailCSS__btn_N_07"></span>_<span id="retailCSS__btn_classname_09"></span> .cbtn i {
+font-style: normal;
+vertical-align: middle;
+transform: translateY(6%);
+font-size: var(--btn_<span id="retailvarM__btn_classname_27"></span>_isize); /*アイコンサイズ*/
+color: var(--btn_<span id="retailvarM__btn_classname_28"></span>_icolor);
+}
+a.pbtn<span id="retailCSS__btn_N_08"></span>_<span id="retailCSS__btn_classname_10"></span> .psdo_Awes i:before {
+font-family: "Font Awesome 5 Free";
+content: var(--btn_<span id="retailvarM__btn_classname_29"></span>_iunicode);
+font-weight: 900;
+}
+a.pbtn<span id="retailCSS__btn_N_09"></span>_<span id="retailCSS__btn_classname_11"></span> .psdo_Moon i:before {
+font-family: 'icomoon';
+content: var(--btn_<span id="retailvarM__btn_classname_30"></span>_iunicode);
+font-weight: normal;
+}</div><div id="viewTAB_0D_Icon">/*---- buttonI_<span id="retailCSS__btn_classname_12"></span> --------*/
+/*---- parent / child ----*/
+a.pbtnI<span id="retailCSS__btn_N_10"></span>_<span id="retailCSS__btn_classname_13"></span> {
+display: inline-block;
+position: relative;
+text-align: center;
+vertical-align: middle;
+width: calc(var(--btn_<span id="retailvarM__btn_classname_31"></span>_isize) *2); /*横幅*/
+height: calc(var(--btn_<span id="retailvarM__btn_classname_32"></span>_isize) *2); /*縦幅*/
+margin: calc(var(--btn_<span id="retailvarM__btn_classname_33"></span>_padding) *0.5); /*外余白*/
+pointer-events: <span id="retailCSS__btn_pointerEve_02"></span>; /*リンクの有効・無効*/
+/*--------- design ---------*/
+background-color: var(--btn_<span id="retailvarM__btn_classname_34"></span>_bgcolor);
+background: var(--btn_<span id="retailvarM__btn_classname_35"></span>_bground);
+border-radius: var(--btn_<span id="retailvarM__btn_classname_36"></span>_radius);
+box-shadow: <span id="retailCSS__btn_shadow_02"></span>;
+}
+a.pbtnI<span id="retailCSS__btn_N_11"></span>_<span id="retailCSS__btn_classname_14"></span>:hover {
+text-decoration: none;
+box-shadow: <span id="retailCSS__btn_hover_02"></span>, 
+<span id="retailCSS__btn_shadowH_02"></span>;
+transform: <span id="retailCSS__btn_translateH_02"></span>;
+}
+a.pbtnI<span id="retailCSS__btn_N_12"></span>_<span id="retailCSS__btn_classname_15"></span>:active {
+box-shadow: <span id="retailCSS__btn_shadowA_02"></span>;
+transform: <span id="retailCSS__btn_translateA_02"></span>;
+}
+a.pbtnI<span id="retailCSS__btn_N_13"></span>_<span id="retailCSS__btn_classname_16"></span> .cbtn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+a.pbtnI<span id="retailCSS__btn_N_14"></span>_<span id="retailCSS__btn_classname_17"></span> .cbtn i {
+position: absolute;
+font-style: normal;
+vertical-align: middle;
+transform: translate(-50%, -44%);
+font-size: var(--btn_<span id="retailvarM__btn_classname_37"></span>_isize); /*アイコンサイズ*/
+color: var(--btn_<span id="retailvarM__btn_classname_38"></span>_icolor);
+}
+a.pbtnI<span id="retailCSS__btn_N_15"></span>_<span id="retailCSS__btn_classname_18"></span> .psdo_Awes i:before {
+font-family: "Font Awesome 5 Free";
+content: var(--btn_<span id="retailvarM__btn_classname_39"></span>_iunicode);
+font-weight: 900;
+}
+a.pbtnI<span id="retailCSS__btn_N_16"></span>_<span id="retailCSS__btn_classname_19"></span> .psdo_Moon i:before {
+font-family: 'icomoon';
+content: var(--btn_<span id="retailvarM__btn_classname_40"></span>_iunicode);
+font-weight: normal;
+}
+/*---- fa-stack_<span id="retailCSS__btn_classname_20"></span> --------*/
+a.fa_<span id="retailCSS__btn_classname_21"></span> {
+background: none;
+/*position: fixed;*/
+/*bottom: 20px;*/
+/*right: 20px;*/
+font-size: var(--btn_<span id="retailvarM__btn_classname_41"></span>_isize);
+pointer-events: <span id="retailCSS__btn_pointerEve_03"></span>; /*リンクの有効・無効*/
+}
+a.fa_<span id="retailCSS__btn_classname_22"></span> .fa-stack-2x {
+color: var(--btn_<span id="retailvarM__btn_classname_42"></span>_bgcolor);
+text-shadow: <span id="retailCSS__btn_shadow_03"></span>;
+}
+a.fa_<span id="retailCSS__btn_classname_23"></span> .fa-stack-1x {
+color: var(--btn_<span id="retailvarM__btn_classname_43"></span>_icolor);
+}
+a.fa_<span id="retailCSS__btn_classname_24"></span> :hover {
+text-shadow: <span id="retailCSS__btn_shadowH_03"></span>;
+transform: <span id="retailCSS__btn_translateH_03"></span>;
+}
+a.fa_<span id="retailCSS__btn_classname_25"></span> :hover .autor {
+mix-blend-mode: overlay;
+}
+a.fa_<span id="retailCSS__btn_classname_26"></span> :active {
+text-shadow: <span id="retailCSS__btn_shadowA_03"></span>;
+transform: <span id="retailCSS__btn_translateA_03"></span>;
+}</div></div><!-- /#viewTAB_0D -->
+
+</code></pre>
+</div>
+<!-- /div --> 
+</div>
+<!-- /child_section /prettyprint lang-css --> 
+</section>
+<!-- /section_0A --> 
+        
+        <!-- mainを横いっぱいに伸ばす用の画像 --> 
+        <img src="img/main_adjustbar.gif" alt=""> </main>
+      <!-- /.main --> 
+      
+      <!-- side_0A -->
+      <aside class="irisviel">
+        <dl>
+          <dt>クラス名（classname）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_classname" value="custom_0A" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>横幅（width）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_width" value="14rem" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>高さ（height）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_height" value="5rem" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>余白（padding / margin）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_padding" value="0.618rem" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>角丸み（radius）</dt>
+          <dd> ※"50%"で正円・楕円<br>
+            <input type="text" id="ordr__btn_radius" value="0.618rem" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>Unicode（疑似要素）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_iunicode" value="f879" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>アイコンサイズ（isize）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_isize" value="1.618rem" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>テキスト（em・spantxt）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_emtxt" value="ご相談はお気軽にどうぞ" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+          <dt>テキスト：太字（btxt）</dt>
+          <dd>
+            <input type="text" id="ordr__btn_btxt" value="012-345-6789" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+          </dd>
+        </dl>
+      </aside>
+      <!-- /side_0A --> 
+      
+      <!-- side_0B -->
+      <aside class="illyasviel">
+        <dl id="pAcc_bgcolor">
+          <dt class="open">背景色（bgcolor / bground）<i></i></dt>
+          <dd> bgcolor（影色にも使用＆IE対策）：<br>
+            <input type="text" id="ordr__btn_bgcolor" value="royalblue" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+            <br>
+            bground（グラデーション対応）：<br>
+            <input type="text" id="ordr__btn_bground" value="royalblue" size="14">
+            <div id="plt_bgcolor" class="palette">
+              <label>
+                <input class="paint" type="button" title="white" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="black" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="dimgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="silver" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gainsboro" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="whitesmoke" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="snow" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ghostwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="floralwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mistyrose" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ivory" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mintcream" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="honeydew" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="azure" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aliceblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lavender" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsteelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="steelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="royalblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="midnightblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="blue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deepskyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="skyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="paleturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="turquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cadetblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="teal" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="green" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="seagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumaquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="limegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olivedrab" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olive" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkkhaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cornsilk" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lemonchiffon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="wheat" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="burlywood" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tan" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="khaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gold" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="goldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="peru" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="chocolate" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="sienna" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="maroon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="brown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="firebrick" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indianred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="rosybrown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darksalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightcoral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="salmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="coral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tomato" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="red" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="crimson" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumvioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deeppink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="hotpink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palevioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="pink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="thistle" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="plum" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="purple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indigo" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumpurple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumslateblue" onclick="String__btn();">
+              </label>
+            </div>
+            <p class="f90">※カラー反映はダブルクリック</p>
+          </dd>
+        </dl>
+        <dl id="pAcc_emcolor">
+          <dt class="open">文字色（em・spancolor）<i></i></dt>
+          <dd>
+            <input type="text" id="ordr__btn_emcolor" value="#FFF" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+            <div id="plt_emcolor" class="palette">
+              <label>
+                <input class="paint" type="button" title="white" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="black" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="dimgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="silver" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gainsboro" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="whitesmoke" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="snow" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ghostwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="floralwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mistyrose" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ivory" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mintcream" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="honeydew" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="azure" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aliceblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lavender" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsteelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="steelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="royalblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="midnightblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="blue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deepskyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="skyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="paleturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="turquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cadetblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="teal" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="green" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="seagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumaquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="limegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olivedrab" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olive" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkkhaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cornsilk" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lemonchiffon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="wheat" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="burlywood" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tan" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="khaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gold" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="goldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="peru" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="chocolate" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="sienna" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="maroon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="brown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="firebrick" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indianred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="rosybrown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darksalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightcoral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="salmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="coral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tomato" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="red" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="crimson" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumvioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deeppink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="hotpink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palevioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="pink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="thistle" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="plum" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="purple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indigo" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumpurple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumslateblue" onclick="String__btn();">
+              </label>
+            </div>
+          </dd>
+        </dl>
+        <dl id="pAcc_bcolor">
+          <dt class="open">太字色（bcolor）<i></i></dt>
+          <dd>
+            <input type="text" id="ordr__btn_bcolor" value="gold" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+            <div id="plt_bcolor" class="palette">
+              <label>
+                <input class="paint" type="button" title="white" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="black" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="dimgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="silver" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gainsboro" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="whitesmoke" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="snow" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ghostwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="floralwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mistyrose" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ivory" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mintcream" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="honeydew" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="azure" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aliceblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lavender" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsteelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="steelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="royalblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="midnightblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="blue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deepskyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="skyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="paleturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="turquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cadetblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="teal" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="green" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="seagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumaquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="limegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olivedrab" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olive" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkkhaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cornsilk" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lemonchiffon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="wheat" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="burlywood" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tan" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="khaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gold" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="goldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="peru" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="chocolate" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="sienna" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="maroon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="brown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="firebrick" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indianred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="rosybrown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darksalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightcoral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="salmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="coral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tomato" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="red" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="crimson" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumvioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deeppink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="hotpink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palevioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="pink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="thistle" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="plum" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="purple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indigo" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumpurple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumslateblue" onclick="String__btn();">
+              </label>
+            </div>
+          </dd>
+        </dl>
+        <dl id="pAcc_icolor">
+          <dt class="open">アイコン色（icolor）<i></i></dt>
+          <dd>
+            <input type="text" id="ordr__btn_icolor" value="#FFFFFE" size="14">
+            <input type="button" value="送信" onclick="String__btn();">
+            <div id="plt_icolor" class="palette">
+              <label>
+                <input class="paint" type="button" title="white" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="black" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="dimgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="silver" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightgray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gainsboro" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="whitesmoke" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="snow" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ghostwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="floralwhite" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mistyrose" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="ivory" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mintcream" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="honeydew" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="azure" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aliceblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lavender" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsteelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslategray" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="steelblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="royalblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="midnightblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="blue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deepskyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="skyblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="paleturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="turquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkturquoise" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cadetblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="teal" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="green" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="seagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumaquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkseagreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="aquamarine" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="limegreen" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olivedrab" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="olive" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkkhaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palegoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="cornsilk" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lemonchiffon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="wheat" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="burlywood" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tan" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="khaki" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="gold" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorange" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="goldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="peru" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkgoldenrod" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="chocolate" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="sienna" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="maroon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="brown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="firebrick" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indianred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="rosybrown" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darksalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightcoral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="salmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="lightsalmon" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="coral" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="tomato" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="red" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="crimson" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumvioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="deeppink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="hotpink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="palevioletred" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="pink" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="thistle" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="plum" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="orchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkorchid" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="purple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="indigo" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumpurple" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="darkslateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="slateblue" onclick="String__btn();">
+              </label>
+              <label>
+                <input class="paint" type="button" title="mediumslateblue" onclick="String__btn();">
+              </label>
+            </div>
+          </dd>
+        </dl>
+      </aside>
+    </div>
+    <!-- /parent_container --> 
+  </div>
+  <!-- /grandparent_container --> 
+  
+</div>
+<!-- /wrap -->
+
+<nav class="breadcrumbs"><!-- breadcrumbs -->
+  <ul class="flexboxRStC">
+    <li><a href="https://sarap422.com/">HOME</a></li>
+    <li>webport</li>
+    <li><a href="btn-generator.html">CSSかんたんボタンジェネレーター</a></li>
+    <li><a href="icomoon/demo.html">icomoon demo</a></li>
+  </ul>
+</nav>
+<!-- /breadcrumbs -->
+
+<footer class="footer">
+  <p><small>&copy; 2020 アイコンも使える CSSかんたんボタンジェネレーター<br>
+    <b>sarap422.com</b><br>
+    https://sarap422.com/webport/btn-generator/</small></p>
+</footer>
+
+<!-- .js関係（scriptの手前に書く） --> 
+<!-- gaeBolg.js --> 
+<span id="gaeBolg" class="fa-stack"><i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-arrow-up fa-stack-1x"></i></span> 
+<!-- script（bodyの手前に書く） --> 
+<script src="js/jQuery-3.5.1.min.js"></script> 
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> 
+<script src="js/gaeBolg.js"></script> 
+<script src="js/scrollTimeAlter.js"></script> 
+<script src="js/invisibleTAB.js"></script> 
+<script src="js/prelatiBook.js"></script> 
+<script src="js/bladeWorks.js"></script> 
+<script src="js/btn-generator.js"></script> 
+<script src="js/gateBabylon.js"></script>
+</body>
+<!-- /body -->
+</html>

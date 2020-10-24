@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/* scss/_primer.scss */
+/* ============================================ */
+body {
+  /*長いURLの場合でも折り返しさせる*/
+  word-wrap: break-word;  
+}
+pre {
+  /*pre要素も折り返しさせる*/
+  white-space: pre-wrap; 
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+  /*もしくは、bottom;*/
+  border: 0;
+}
+
+img.radius {
+  border-radius: 50%;
+}
+
+a { color: midnightblue;
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover {
+    background: #9eb3c7;
+    color: firebrick;
+}
+a:hover img { opacity: 0.8; }
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0.618rem;
+}
+
+p.mTB0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.mT1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+p.mB1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p.mTB1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+span｛｝ span.inlineB {
+  display: inline-block;
+}
+
+nav {
+  font-size: 90%;
+  /*収まり考えて少し小さめにしておく*/
+}
+
+.flexNowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  /*折り返しなし*/
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  /*折り返しあり*/
+}
+
+dt, dd {
+  /*view.css*/
+}
+
+/* pcv（PCview Responsive mobile first）*/
+/* -------------------------------------------- */
+.flexwrapN_pcvW {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flexwrapW_pcvN {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* li内の要素を縦位置中央揃え */
+/*（※li内の縦位置揃えは大変なので、基本はこれとflexboxでいい）*/
+/* -------------------------------------------------- */
+li {
+  display: -webkit-box;
+  /* safari, Chrome */
+  display: -moz-box;
+  /* Firefox */
+  display: -o-box;
+  /* Opera */
+  display: -ms-box;
+  /* IE */
+  display: box;
+  /* ベンダープレフィックスなし */
+  -webkit-box-align: center;
+  /* safari, Chrome */
+  -moz-box-align: center;
+  /* Firefox */
+  -o-box-align: center;
+  /* Opera */
+  -ms-box-align: center;
+  /* IE */
+  box-align: center;
+  /* ベンダープレフィックスなし */
+  text-align: center;
+}
+li div, li p, li a, li span {
+  display: block;
+}
+
+/* margin（ブロック要素）*/
+/* -------------------------------------------------- */
+.marginL {
+  margin-right: auto;
+  /*左寄せ*/
+}
+
+.marginC {
+  margin: 0 auto;
+  /*中央寄せ*/
+}
+
+.marginR {
+  margin-left: auto;
+  /*右寄せ*/
+}
+
+.vmarginT {
+  margin-bottom: auto;
+  /*上寄せ*/
+}
+
+.vmarginM {
+  margin: auto 0;
+  /*中央寄せ*/
+}
+
+.vmarginB {
+  margin-top: auto;
+  /*下寄せ*/
+}
+
+/* ---- align （インライン要素）---- */
+.alignL {
+  text-align: left;
+  /*左寄せ*/
+}
+
+.alignC {
+  text-align: center;
+  /*中央寄せ*/
+}
+
+.alignR {
+  text-align: right;
+  /*右寄せ*/
+}
+
+.valignT {
+  vertical-align: top;
+  /*上寄せ*/
+}
+
+.valignM {
+  vertical-align: middle;
+  /*中央寄せ*/
+}
+
+.valignB {
+  vertical-align: bottom;
+  /*下寄せ*/
+}
+
+/* ---- pcv （PCview Responsive mobile first）---- */
+.alignL_pcv {
+  text-align: left;
+  /*左寄せ*/
+}
+
+.alignC_pcv {
+  text-align: center;
+  /*中央寄せ*/
+}
+
+.alignR_pcv {
+  text-align: right;
+  /*右寄せ*/
+}
+
+.valignT_pcv {
+  vertical-align: top;
+  /*上寄せ*/
+}
+
+.valignM_pcv {
+  vertical-align: middle;
+  /*中央寄せ*/
+}
+
+.valignB_pcv {
+  vertical-align: bottom;
+  /*下寄せ*/
+}
+
+/* clearfix：2列のときだけ（テキスト回り込み等） */
+/* -------（flexboxの切り替えと併用）------------------- */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+[class^=floatL] {
+  flex: none;
+  float: left;
+  margin-right: 1.618rem;
+}
+
+[class^=floatR] {
+  flex: none;
+  float: right;
+  margin-left: 1.618rem;
+}
+
+[class^=floatL] img,
+[class^=floatR] img {
+  width: 100%;
+}
+
+.floatRw50,
+.floatLw50 {
+  width: 50%;
+}
+
+.floatRw38,
+.floatLw38 {
+  width: 38%;
+}
+
+.floatN {
+  width: auto;
+  float: none;
+  margin: 0 auto;
+}
+
+/* flexbox（上記clearfixと合わせて）*/
+/* -------------------------------------------------- */
+.flexbox {
+  display: flex;
+}
+
+.flexboxCCC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexboxCSbS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.flexboxCSbC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexboxCStC {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.flexboxCStS {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.flexboxRCC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexboxRCS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.flexboxRSaC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexboxRSaS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.flexboxRSbC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexboxRSbS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.flexboxRStC {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.flexboxRStS {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.flexboxRrStC {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+}
+
+.flexboxRrStS {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: start;
+}
+
+/* ---- pcv （PCview Responsive mobile first）---- */
+.flexboxCCC_pcvRCC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexboxCCC_pcvRSbC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexboxCStS_pcvRStS {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+/* ---- Grid Layout 設定（3列以上から） ---- */
+/* 同じにしておいて、階層で使い分ける */
+.pgrid, .cgrid, gcgrid {
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: auto;
+}
+
+/* ---- landscape（横長）、portrait（縦長） ---- */
+/*（一応指定できるけど調整が大変になるのであまり使わない方がいい）*/
+.griport,
+.griland {
+  padding: 0.618rem;
+}

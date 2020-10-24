@@ -1,0 +1,193 @@
+@charset "UTF-8";
+input[type="button"] {
+  margin-left: 0.618rem;
+}
+code [id^="retail"] {
+  background-color: rgba(236, 236, 128, 0.2)
+}
+/* -------- ボタン設定 -------- */
+/*ボタン横幅は、width:14em くらいまでにしないとiPhone5に収まらない*/
+/* -------- button color -------- */
+:root {
+  --btn_width: 14rem;
+  --btn_height: 5rem;
+  --btn_padding: 0.618rem; /*余白*/
+  --btn_bgcolor: royalblue; /*影色にも使用＆IE対策*/
+  --btn_bground: royalblue; /*グラデーション対応*/  
+  --btn_radius: 0.618rem; /*角丸み*/
+
+  --btn_spancolor: #FFF;
+  --btn_emcolor: #FFF;
+  --btn_bcolor: gold;  
+
+  --btn_iunicode: "\f879"; /*FontAwesome5 or IcoMoon*/
+  --btn_isize: 1.618rem; /*アイコンサイズ*/
+  --btn_icolor: #FFFFFE; /*アイコン*/
+  --btn_iflex: row; /*アイコン位置*/
+
+  --btn_hover: 0px 0px 0px var(--btn_height) rgba(255, 255, 255, 0.2) inset;  
+  --btn_hover_none: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
+  --btn_hover_bright: 0px 0px 0px var(--btn_height) rgba(255, 255, 255, 0.2) inset;
+  --btn_hover_dark: 0px 0px 0px var(--btn_height) rgba(0, 0, 0, 0.2) inset;
+
+  --btn_shadow: 0px 2px 0px rgba(90, 90, 90, 0.5), 0px 2px 0px var(--btn_bgcolor), 0px 3px 3px rgba(0, 0, 0, 0.3);
+  --btn_shadowH: 0px 3px 0px rgba(90, 90, 90, 0.5), 0px 3px 0px var(--btn_bgcolor), 0px 4px 3px rgba(0, 0, 0, 0.3);
+  --btn_shadowA: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  --btn_shadow_01: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  --btn_shadowH_01: 0px 3px 2px rgba(0, 0, 0, 0.3);
+  --btn_shadowA_01: 0px 0px 1px rgba(0, 0, 0, 0.15);
+  --btn_shadow_02: 0px 2px 0px rgba(90, 90, 90, 0.5), 0px 2px 0px var(--btn_bgcolor), 0px 3px 3px rgba(0, 0, 0, 0.3);
+  --btn_shadowH_02: 0px 3px 0px rgba(90, 90, 90, 0.5), 0px 3px 0px var(--btn_bgcolor), 0px 4px 3px rgba(0, 0, 0, 0.3);
+  --btn_shadowH_02: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  --btn_shadow_none: 0px 0px 0px rgba(0, 0, 0, 0);
+  --btn_shadowH_none: 0px 0px 0px rgba(0, 0, 0, 0);
+  --btn_shadowA_none: 0px 0px 0px rgba(0, 0, 0, 0);
+
+  --btn_translateH: translateY(-1px);
+  --btn_translateA: translateY(2px);
+
+  --btn_pointerEve: auto; 
+}
+/* -------- parent button -------- */
+/* -------- child button -------- */
+/* -------- button_rounded_ALL-------- */
+a.pbtn_custom_ALL {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;  
+  width: var(--btn_width); /*横幅*/
+  height: var(--btn_height); /*縦幅*/
+  margin: calc(var(--btn_padding) *0.5); /*外余白*/
+  pointer-events: var(--btn_pointerEve); /*リンクの有効・無効*/
+  /* -------- design -------- */
+  background-color: var(--btn_bgcolor);
+  background: var(--btn_bground);
+  border-radius: var(--btn_radius);
+  box-shadow: var(--btn_shadow);
+}
+a.pbtn_custom_ALL:hover {
+  text-decoration: none;
+  box-shadow: var(--btn_hover), var(--btn_shadowH);
+  transform: var(--btn_translateH);
+}
+a.pbtn_custom_ALL:active {
+  box-shadow: var(--btn_shadowA);
+  transform: var(--btn_translateA);
+}
+a.pbtn_custom_ALL .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: var(--btn_iflex); /*アイコン位置*/
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - var(--btn_padding));
+  color: var(--btn_spancolor);
+}
+a.pbtn_custom_ALL .cbtn em {
+  font-size: 80%;
+  font-style: normal;
+  padding: calc(var(--btn_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_emcolor);
+}
+a.pbtn_custom_ALL .cbtn b {
+  font-size: 150%;
+  padding: calc(var(--btn_padding) *0.5); /*アイコンくっつき防止*/
+  color: var(--btn_bcolor);
+}
+a.pbtn_custom_ALL .cbtn i {
+  font-style: normal;
+  vertical-align: middle;
+  transform: translateY(6%);
+  font-size: var(--btn_isize); /*アイコンサイズ*/
+  color: var(--btn_icolor);
+}
+a.pbtn_custom_ALL .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_iunicode);
+  font-weight: 900;
+}
+a.pbtn_custom_ALL .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_iunicode);
+  font-weight: normal;
+}
+/*---- parent Icon / child button --------*/
+a.pbtnI_custom_ALL {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: calc(var(--btn_isize) *2); /*横幅*/
+  height: calc(var(--btn_isize) *2); /*縦幅*/
+  margin: calc(var(--btn_padding) *0.5); /*外余白*/
+  pointer-events: var(--btn_pointerEve); /*リンクの有効・無効*/
+  /* -------- design -------- */
+  background-color: var(--btn_bgcolor);
+  background: var(--btn_bground);
+  border-radius: var(--btn_radius);
+  box-shadow: var(--btn_shadow);
+}
+a.pbtnI_custom_ALL:hover {
+  text-decoration: none;
+  box-shadow: var(--btn_hover), var(--btn_shadowH);
+  transform: var(--btn_translateH);
+}
+a.pbtnI_custom_ALL:active {
+  box-shadow: var(--btn_shadowA);
+  transform: var(--btn_translateA);
+}
+a.pbtnI_custom_ALL .cbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.pbtnI_custom_ALL .cbtn i {
+  position: absolute;
+  font-style: normal;
+  vertical-align: middle;
+  transform: translate(-50%, -44%);
+  font-size: var(--btn_isize); /*アイコンサイズ*/
+  color: var(--btn_icolor);
+}
+a.pbtnI_custom_ALL .psdo_Awes i:before {
+  font-family: "Font Awesome 5 Free";
+  content: var(--btn_iunicode);
+  font-weight: 900;
+}
+a.pbtnI_custom_ALL .psdo_Moon i:before {
+  font-family: 'icomoon';
+  content: var(--btn_iunicode);
+  font-weight: normal;
+}
+/*---- Icon fa-stack --------*/
+a.fa_custom_ALL {
+  background: none;
+  /*position: fixed;*/
+  /*bottom: 20px;*/
+  /*right: 20px;*/
+  font-size: var(--btn_isize);
+  pointer-events: var(--btn_pointerEve); /*リンクの有効・無効*/
+}
+a.fa_custom_ALL .fa-stack-2x {
+  color: var(--btn_bgcolor);
+  text-shadow: var(--btn_shadow);
+}
+a.fa_custom_ALL .fa-stack-1x {
+  color: var(--btn_icolor);  
+}
+a.fa_custom_ALL :hover {
+  text-shadow: var(--btn_shadowH);
+  transform: var(--btn_translateH);
+}
+a.fa_custom_ALL :hover .autor {
+  mix-blend-mode: overlay;
+}
+a.fa_custom_ALL :active {
+  text-shadow: var(--btn_shadowA);
+  transform: var(--btn_translateA);
+}

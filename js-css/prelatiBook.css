@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+i { font-style: normal; }
+
+/*pAcc_0A*/
+#pAcc_0A h3 { position: relative; }
+#pAcc_0A .close i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f103";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+#pAcc_0A .open i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f102";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+
+/*pAcc_bgcolor*/
+#pAcc_bgcolor dt { position: relative; }
+#pAcc_bgcolor .close i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f103";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+#pAcc_bgcolor .open i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f102";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+
+/*pAcc_emcolor*/
+#pAcc_emcolor dt { position: relative; }
+#pAcc_emcolor .close i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f103";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+#pAcc_emcolor .open i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f102";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+/*pAcc_bcolor*/
+#pAcc_bcolor dt { position: relative; }
+#pAcc_bcolor .close i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f103";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+#pAcc_bcolor .open i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f102";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+/*pAcc_icolor*/
+#pAcc_icolor dt { position: relative; }
+#pAcc_icolor .close i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f103";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}
+#pAcc_icolor .open i:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f102";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-1em, -50%);
+}

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* -------- △CSS Reset ここまで -------- */
+
+/* -------- セクション別背景色設定 -------- */
+body {
+    background: #AAA;
+    color: #222;
+    /*背景画像*/
+    /*background: url("../img/bg_photo.png") no-repeat top center / contain; }*/
+}
+button:hover {
+    background: rgba(255,255,255,0.2);
+}
+dt {
+    background: #cecece;   
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #AAA;
+    border-bottom: none;
+}
+dd {
+    background: #b5b5b5;
+    border: 1px solid #AAA;
+    border-top: none;   
+}
+.pwrappper { background: #999; }
+header.heavensfeel { background: #a8a8a8; }
+.topmenu { background: #bfbfbf; }
+
+main { background: #bfbfbf; }
+aside { background: #bfbfbf; }
+
+section,
+article {
+    background: whitesmoke;
+    border: 1px solid #AAA;
+}
+.topbar {
+    background: #b5b5b5;
+    border-bottom: 1px solid #999;
+}
+.topmenu ul { background: #b5b5b5; }
+.topmenu li { background: #b5b5b5; }
+/* [class^="psect"] で始まる演算子 */
+[class^="psect_0A"] h2 { background: #a3b8cc; }
+[class^="psect_0A"] h3 { background: rgba(90,90,90,0.5); }
+h4, h5, h6 { background: rgba(90,90,90,0.1); }
+.menu_0A ul { background: #cecece; }
+.menu_0A li {
+    background: #cecece;
+}
+.menu_0A li:last-child { border-right: none; }
+.menu_0B ul {}
+.menu_0B li {
+    background: #cecece;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #AAA;
+    border-bottom: none;
+}
+.curTAB { border-bottom: 2px solid #0075ff; }
+nav.breadcrumbs {
+    background: #bfbfbf;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+footer { background: #999; 
+}
+/* -------- 便宜的にfont設定 -------- */
+/* ----- (CSSに詳しくない方が扱える用) ----- */
+
+strong { font-size: 150%; }
+.f200 { font-size: 200%; }
+.f150 { font-size: 150%; }
+.f140 { font-size: 140%; }
+.f130 { font-size: 130%; }
+.f120 { font-size: 120%; }
+.f110 { font-size: 110%; }
+.f100 { font-size: 100%; }
+.f90 { font-size: 90%; }
+.f80 { font-size: 80%; }
+.f70 { font-size: 70%; }
+.f60 { font-size: 60%; }
+
+/* -------- 便宜的にcolor設定 -------- */
+/* -------- color変数設定 -------- */
+/* なるべくカラーコード・洋色と名前がカブらないように*/
+:root {
+    --c_caviar: #222; /*黒*/
+    --c_milk: #FFF; /*白*/
+    --c_acerola: #EE0213; /*濃赤*/
+    --c_avocado: #21A698; /*青緑*/
+    --c_strawberry: #F93140; /*赤*/
+    --c_mango: #FFB733; /*橙色*/
+    --c_carrot: #FF8933; /*赤橙*/
+    --c_blueberry: #315EB0; /*青*/
+    --c_melon: #42D62B; /*緑*/
+    --c_prune: #CC288F; /*紫*/
+    --c_kiwi: #B7F12F; /*黄緑*/
+    --c_akebia: #4C34B0; /*青紫*/
+    --c_banana: #FFD933; /*黄色*/
+    --c_chocomint: #D0F8F3; /*薄青緑*/
+    --c_ramune: #D4E1F8; /*水色*/
+    --c_muscat: #D8FCD3; /*薄黄緑*/
+    --c_sakura: #FFD5D8; /*桃色*/
+    --c_cheese: #FFF1D6; /*薄黄*/
+    --c_latte: #FFE7D6; /*薄茶*/
+}
+
+
+/* -------- テキストカラー変更 -------- */
+.c_caviar, a .c_caviar, .c_caviar a {
+color: var(--c_caviar); } /*黒*/
+.c_milk, a .c_milk, .c_milk a {
+color: var(--c_milk); } /*白*/
+.c_acerola, a .c_acerola, .c_acerola a {
+color: var(--c_acerola); } /*濃赤*/
+.c_avocado, a .c_avocado, .c_avocado a {
+color: var(--c_avocado); } /*青緑*/
+.c_strawberry, a .c_strawberry, .c_strawberry a {
+color: var(--c_strawberry); } /*赤*/
+.c_mango, a .c_mango, .c_mango a {
+color: var(--c_mango); } /*橙色*/
+.c_carrot, a .c_carrot, .c_carrot a {
+color: var(--c_carrot); } /*赤橙*/
+.c_blueberry, a .c_blueberry, .c_blueberry a {
+color: var(--c_blueberry); } /*青*/
+.c_melon, a .c_melon .c_melon a {
+color: var(--c_melon); } /*緑*/
+.c_prune, a .c_prune, .c_prune a {
+color: var(--c_prune); } /*紫*/
+.c_kiwi, a .c_kiwi, .c_kiwi a {
+color: var(--c_kiwi); } /*黄緑*/
+.c_akebia, a .c_akebia, .c_akebia a {
+color: var(--c_akebia); } /*青紫*/
+.c_banana, a .c_banana, .c_banana a {
+color: var(--c_banana); } /*黄色*/
+.c_chocomint, a .c_chocomint, .c_chocomint a {
+color: var(--c_chocomint); } /*薄青緑*/
+.c_ramune, a .c_ramune, .c_ramune a {
+color: var(--c_ramune); } /*薄水色*/
+.c_muscat, a .c_muscat, .c_muscat a {
+color: var(--c_muscat); } /*薄黄緑*/
+.c_sakura, a .c_sakura, .c_sakura a {
+color: var(--c_sakura); } /*薄桃色*/
+.c_cheese, a .c_cheese, .c_cheese a {
+color: var(--c_cheese); } /*薄黄*/
+.c_latte, a .c_latte, .c_latte a {
+color: var(--c_latte); } /*薄茶*/
+
+
+/* -------- 背景カラー変更 -------- */
+.bgc_caviar { background-color: var(--c_caviar); } /*黒*/
+.bgc_milk { background-color: var(--c_milk); } /*白*/
+.bgc_acerola { background-color: var(--c_acerola); } /*濃赤*/
+.bgc_avocado { background-color: var(--c_avocado); } /*青緑*/
+.bgc_strawberry { background-color: var(--c_strawberry); } /*赤*/
+.bgc_mango { background-color: var(--c_mango); } /*橙色*/
+.bgc_carrot { background-color: var(--c_carrot); } /*赤橙*/
+.bgc_blueberry { background-color: var(--c_blueberry); } /*青*/
+.bgc_melon { background-color: var(--c_melon); } /*緑*/
+.bgc_prune { background-color: var(--c_prune); } /*紫*/
+.bgc_kiwi { background-color: var(--c_kiwi); } /*黄緑*/
+.bgc_akebia { background-color: var(--c_akebia); } /*青紫*/
+.bgc_banana { background-color: var(--c_banana); } /*黄色*/
+.bgc_chocomint { background-color: var(--c_chocomint); } /*薄青緑*/
+.bgc_ramune { background-color: var(--c_ramune); } /*薄水色*/
+.bgc_muscat { background-color: var(--c_muscat); } /*薄黄緑*/
+.bgc_sakura { background-color: var(--c_sakura); } /*薄桃色*/
+.bgc_cheese { background-color: var(--c_cheese); } /*薄黄*/
+.bgc_latte { background-color: var(--c_latte); } /*薄茶*/
+
+

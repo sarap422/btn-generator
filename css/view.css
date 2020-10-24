@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* -------- スマホ表示（iPhone6未満）-------- */
+@media only screen and (max-width: 374px)  {
+
+html { font-size: 90%;
+}
+}/*/@media only screen and (max-width: 374px) */
+
+/* -------- 1カラム 500px以下 （スマホ縦のみ対応） -------- */
+/*500pxがchromeの最低横幅なのでチェックが楽*/
+@media only screen and (max-width: 500px) {
+/*PC用コンテンツを非表示*/
+.PCview { display: none; }
+
+.toplogo {
+  width: 100%;
+  border-bottom: 1px solid #AAA;
+}
+.topmenu li:first-child {
+  border-left: 0px solid #999;  
+}
+.preface {
+  width: 100%;
+}
+.menu_0A li {
+  width: 100%;
+  border-bottom: 1px solid #AAA;
+}
+
+} /*@media only screen and (max-width: 500px)*/
+
+/* -------- 3カラム 501px以上 （タブレット・デスクトップ） -------- */
+/*width: 71%（17%/54%）, 29% (1, 0.414) 縦A4サイズ確保*/
+/*width: 62%（8%/54%）, 38% (1, 0.618) 縦A4サイズ確保*/
+@media only screen and (min-width: 501px) {
+/*PCからの電話発信を無効*/
+a[href^="tel:"] { pointer-events: none; }
+
+/*スマホ用コンテンツを非表示*/
+.MBview { display: none; }
+
+.menu_0A li {
+    border-right: 1px solid #AAA;
+}
+
+
+/* 3col */
+.fantasism_Marble {}
+  main.einzbern {
+    width: 54%;
+    margin: 0 0.309rem;
+    order: 2; /*中央カラム*/
+    flex-grow: 1; /*幅が余るときは引き伸ばす*/
+
+  }
+  aside.irisviel {
+    width: 23%;
+    order: 3; /*右カラム*/  
+  }
+  aside.illyasviel {   
+    width: 23%;
+    order: 1; /*左カラム*/  
+  }
+/* ---- pcv （PCview Responsive mobile first）---- */
+.flexboxCCC_pcvRCC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexboxCCC_pcvRSbC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexboxCStS_pcvRStS {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+}/*@media only screen and (max-width: 500px)*/
